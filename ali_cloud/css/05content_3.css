@@ -1,0 +1,124 @@
+.content_3{
+    width: 100%;
+    height: 373px;
+}
+.content_3_box{
+    width:1280px;
+    height: 373px;
+    position: relative;
+    overflow: hidden;
+}
+.content_3_box>.prev,.content_3_box>.next{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 373px;
+    font-size: 35px;
+    color: gainsboro;
+    z-index: 11;
+    display: none;
+    cursor: pointer;
+}
+.content_3_box>.prev{
+    left: 0;
+}
+.content_3_box>.next{
+    right: 0;
+}
+.content_3_box>ul{
+    width: 400%;
+    height: 373px;
+    position: absolute;
+    left:1280px;
+    top:0;
+}
+.content_3_box>ul>li{
+    width: 256px;
+    height: 373px;
+    float: left;
+}
+.content_3_box>ul>li:nth-child(2n)>.content_3_con{
+    background: rgba(0,0,0,0.3);
+
+}
+.content_3_box>ul>li:nth-child(2n-1)>.content_3_con{
+    background: rgba(0,0,0,0.6);
+
+}
+.content_3_box>ul>li .content_3_con{
+    position: absolute;
+    width: 256px;
+    height: 373px;
+    z-index: 2;
+    text-align: center ;
+}
+.content_3_con img{
+    margin-top: 100px;
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+}
+.content_3_con span{
+    width: 20px;
+    height: 2px;
+    background: white;
+    display: block;
+    margin-left: 46%;
+    margin-top: 15px;
+}
+.content_3_con h2{
+    margin-top: 35px;
+    font-size: 23px;
+    color: white;
+    transition: 0.7s;
+}
+.content_3_con p{
+    display: none;
+}
+.content_3_con input{
+    display:none;
+}
+.content_3_box>ul>li:hover>.content_3_con{
+   background: rgba(51,167,198,0.7);
+}
+.content_3_box>ul>li:hover>.content_3_con img{
+    margin-top: 50px;
+}
+.content_3_box>ul>li:hover>.content_3_con span{
+    display:none;
+}
+.content_3_box>ul>li:hover>.content_3_con h2{
+    margin-top: 10px;
+}
+.content_3_box>ul>li:hover>.content_3_con p{
+    display: block;
+    margin: 30px 15px 0 15px;
+    line-height: 25px;
+    color: white;
+    font-size:12px;
+}
+.content_3_box>ul>li:hover>.content_3_con input{
+    width: 122px;
+    height: 38px;
+    color: white;
+    background: rgba(51,167,198,0);
+    border: 1px solid white;
+    display: block;
+    margin: 40px  0  0  65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

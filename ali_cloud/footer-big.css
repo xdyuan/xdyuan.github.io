@@ -1,0 +1,350 @@
+* {
+    margin:0;
+    padding: 0;
+}
+#width-box {
+    width: 100%;
+    background-color: #333;
+}
+.footer {
+    width: 1280px;
+    height: 850px;
+    background-color: #333;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.footer .footer-big {
+    height: 642px;
+}
+.footer .footer-small {
+    height: 208px;
+    font-size: 14px;
+}
+.footer .footer-big .footer-big-head {
+    width: 1100px;
+    height: 121px;
+    margin-left:50px;
+    margin-right: 50px;
+}
+.footer .footer-big .footer-big-head ul {
+    list-style: none;
+    position: relative;
+    width: 1100px;
+    height: 120px;
+    border-bottom: 1px solid rgba(255,255,255,0.11);
+}
+.footer .footer-big .footer-big-head ul li {
+    float: left;
+    width: 275px;
+    height: 120px;
+    text-align: center;
+
+}
+.footer .footer-big .footer-big-head ul li a {
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+    line-height: 120px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.footer .footer-big .footer-big-head img {
+    width:50px;
+    height: 50px;
+    text-align: center;
+    margin-top:34px;
+    position: absolute;
+
+}
+.footer .footer-big .footer-big-head span {
+    line-height: 120px;
+    margin-top:34px;
+    margin-left:20px;
+}
+.footer .footer-big .footer-big-head ul li a:hover {
+    color: #00a2ca;
+}
+/*现在是做的是有电话的部分*/
+.footer-big-phone {
+    width:1100px;
+    height: 120px;
+    border-bottom: 1px solid rgba(255,255,255,0.11);
+    margin:auto;
+}
+.footer-big-phone .center {
+    height: 50px;
+    padding-left: 52px;
+    padding-top:35px;
+    padding-bottom: 35px;
+}
+.footer-big-phone .center .phone  {
+    /*width: 50px;*/
+    /*height: 50px;*/
+    float: left;
+}
+.footer-big-phone .center .phone img {
+    width: 50px;
+    height: 41px;
+}
+.footer-big-phone .center .text {
+    color: white;
+    margin-left: 30px;
+    float: left;
+}
+.footer-big-phone .center .text .p1 {
+    margin-bottom: 10px;
+}
+.footer-big-phone .center .text .pp {
+    font-size: 22px;
+}
+.footer-big-phone .right {
+    margin-left: 90px;
+    height: 24px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.footer-big-phone .right p {
+    float: left;
+    color: white;
+}
+.footer-big-phone .right p a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.footer-big-phone .right p a:hover {
+    color:#00a2ca ;
+}
+/* 该做服务与支持这块*/
+
+.footer-big .serve {
+    height: 400px;
+    width:1200px;
+}
+.footer-big .serve .serve-son {
+    width: 1100px;
+    height: 304px;
+    margin:0 50px ;
+    padding:48px 0;
+}
+/* ****************/
+ul {
+  list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* *****************/
+.footer-big .serve .serve-son .head {
+    width: 1100px;
+    height: 271px;
+}
+.footer-big .serve .serve-son .head-li {
+    float: left;
+    width: 215px;
+    height: 254px;
+    position: relative;
+}
+.footer-big .serve .serve-son .head-li h3 {
+    color: white;
+}
+.footer-big .serve .serve-son .head-li .head-li-ul {
+    margin-top:20px;
+    font-size: 12px;
+    height: 210px;
+}
+.footer-big .serve .serve-son .head-li .head-li-ul li {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+
+
+}
+.footer-big .serve .serve-son .head-li .head-li-ul li a {
+    color: #A9B0B4;
+    text-decoration: none;
+}
+.footer-big .serve .serve-son .head-li .head-li-ul li a:hover {
+    color: #00a2ca;
+}
+.footer-big .serve .serve-son .head-li .head-li-ul img {
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+.footer-big .serve .serve-son .head-li .head-li-ul .head-li-ul-img {
+    display: block;
+}
+
+
+
+
+/* 现在做的是最后一小块内容 */
+.footer-small{
+    width: 100%;
+
+}
+.footer-small .footer-small-content {
+    text-align: left;
+    display: inline-block;
+    height: 153px;
+    margin:0 40px;
+    padding:15px 0 40px 0;
+    /*position: relative;*/
+}
+.footer-small .footer-small-content .content-p {
+    height: 30px;
+    line-height: 30px;
+    padding:5px 0;
+    display: inline-block;
+}
+.footer-small .footer-small-content .content-p a{
+    color: #777F84;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.footer-small .footer-small-content .content-p a:hover {
+    text-decoration: underline;
+}
+.footer-small .footer-small-content .china {
+    display: inline-block;
+    float: right;
+    margin-left:5px;
+    position: relative;
+}
+.footer-small .footer-small-content .china input {
+    width: 178px;
+    height: 30px;
+    padding:0 30px 0 10px;
+    background-color: rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.7);
+}
+.footer-small .footer-small-content .china .bnt {
+    position: absolute;
+    top:1px;
+    right:1px;
+    width: 30px;
+    height: 30px;
+    border:0;
+    background-color:rgba(255,255,255,0) ;
+}
+.footer-small .footer-small-content .input-text {
+    border:1px solid rgba(255,255,255,0.7);
+    height:30px;
+    width: 145px;
+    position:relative;
+    float: right;
+    padding:0 10px 0 35px;
+    color: #999;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+}
+.footer-small .footer-small-content .input-text img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    line-height: 30px;
+}
+
+.footer-small .footer-small-content .input-text #input-text-down{
+    position: absolute;
+    line-height: 30px;
+    font-size: 14px;
+    right: 5px;
+    display: block;
+}
+.footer-small .footer-small-content .input-text #input-text-up{
+    position: absolute;
+    line-height: 30px;
+    font-size: 14px;
+    right: 5px;
+    display: none;
+}
+.footer-small .footer-small-content .input-fother {
+    position: relative;
+    display: none;
+    /*background-color:rgba(255,255,255,0.1) ;*/
+
+}
+.footer-small .footer-small-content .input-text-none {
+    border:1px solid rgba(255,255,255,0.7);
+    height:30px;
+    width: 145px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+    position: absolute;
+    padding:0 10px 0 35px;
+    text-align: left;
+    left: 792px;
+    top: -2px;
+    background-color:#333 ;
+    /*display:none;*/
+}
+
+
+
+
+.footer-small .footer-small-content .input-text-none img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:8px;
+    left: 10px;
+    line-height: 30px;
+}
+
+/*  版权  */
+
+.footer-small .footer-small-content .link-warp {
+    text-align: left;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+    padding:5px 0;
+}
+.footer-small .footer-small-content .link-warp a{
+    font-size: 14px;
+    color: #777F84;
+    padding-right: 10px;
+    line-height: 24px;
+}
+.footer-small .footer-small-content .link-warp a:hover{
+    text-decoration: underline;
+}
+
+.footer-small .footer-small-content .copyright {
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+    padding:5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
