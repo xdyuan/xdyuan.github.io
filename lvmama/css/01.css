@@ -1,0 +1,308 @@
+
+.public-box-clearfix-count-first {
+    width: 1200px;
+    height: 525px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.public-tit {
+    width: 1200px;
+    height: 30px;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+}
+.fl{
+    display: inline;
+    font-weight: normal;
+    float: left;
+    font-size: 100%;
+
+}
+#guoneiyou {
+   /* margin-bottom: 20px;*/
+    /*padding-bottom: 50px;*/
+
+    color: #333;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 22px;
+}
+div h3 span{
+    /*padding-top: 5;*/
+    padding-left: 8px;
+    color: #bababa;
+    font-weight: normal;
+    font-size: 100%;
+}
+.JS_public-public-sub{
+    position: absolute;
+    left: 245px;
+    bottom: 0;
+    height: 30px;
+    line-height: 24px;
+    color: #666;
+
+}
+.JS_public-public-sub>li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    margin: 0 8px;
+    padding: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(237, 51, 135);
+}
+.public-tit-more-fr{
+    color: #bababa;
+    padding-top: 5px;
+    line-height: 14px;
+    float: right;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+
+.guonei-box-clearfix {
+    width: 1200px;
+    height: 488px;
+    clear: both;
+    display: block;
+
+
+
+}
+.public-asidebg-fl-count-first{
+    height: 488px;
+    width: 240px;
+    background:#f1f1f1;
+
+    float: left;
+    display: block;
+
+}
+.public-asidenav{
+    width: 240px;
+    height: 377px;
+    margin-top: 13px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    position: relative;
+
+}
+.public-asidenav dl {
+    width: 0px;
+    margin: -25px auto 0;
+    height: auto;
+   /* border-left: 1px solid #ddd;*/
+
+}
+.public-asidenav dl dt{
+    width: 145px;
+    margin-top: 25px;
+    margin-left: -72px;
+    text-align: center;
+    /*border: solid green 1px;*/
+
+}
+
+ .chang{
+     width: 145px;
+     height: 32px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    background: url("../images/icon_.png") no-repeat;
+     background-position: 0 -81px;
+    text-align: center;
+
+}
+
+.public-asidenav dd {
+
+    position: relative;
+    background: url("../images/icon_.png") no-repeat;
+    background-position:-56px -7px;
+
+    width: 9px;
+    height: 9px;
+    margin: 27px 0 0 -5px;
+
+
+    font-size: 14px;
+    display: block;
+}
+.zhou {
+    width: 145px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    background: url("../images/icon_.png") no-repeat;
+    background-position: 0 -81px;
+    text-align: center;
+    font-family: "Microsoft YaHei"
+}
+
+
+.public-asidenav dd a{
+       width: 100px;
+       height: 15px;
+    top: -2px;
+    right: 24px;
+    overflow: hidden;
+    line-height: 14px;
+    position: absolute;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+.public-asidenav dd .r{
+    left: 24px;
+    text-align: left;
+    top: -2px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.public-pro-clearfix-fl-count-first{
+    width: 945px;
+    padding-top: 13px;
+    margin-left: 15px;
+    float: left;
+    display: inline-block;
+}
+.pro-list-fl{
+    position: relative;
+    width: 735px;
+    padding-top: 278px;
+    float: left;
+    display: inline-block;
+
+}
+.pro-tag {
+    float: left;
+    color: #390;
+    font-size: 14px;
+    line-height: 35px;
+}
+.pro-list-price-fr{
+    color: #ff6600;
+   text-align: right;
+    width: 100px;
+    height: 35px;
+    white-space: nowrap;
+    float: right;
+    line-height: 35px;
+   ;
+
+}
+.public-tuango-fr{
+    position: relative;
+    width: 195px;
+    height: 435px;
+    float: right;
+    display: inline-block;
+}
+.tuango-info-skyblue{
+    background:rgb(45,165,120) ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 195px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+}
+.css3_liy-5-css3_run{
+    width: 760px;
+    display: block;
+}
+.w485_243{
+    left: 0;
+    width: 485px;
+    position: absolute;
+    height: 278px;
+    top: 0;
+    float: left;
+    display: inline;
+    margin-right: 15px;
+}
+.w235_243{
+    left: 500px;
+    width: 235px;
+    position: absolute;
+    top: 0;
+    height: 278px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    margin-right: 15px;
+
+}
+.w123_{
+    width: 235px;
+    float: left;
+    display: inline;
+    margin-right: 15px;
+
+}
+.w234_{
+    width: 235px;
+    float: left;
+    display: inline;
+    margin-right: 15px;
+}
+.w321_{
+    width: 235px;
+    float: left;
+    display: inline;
+    margin-right: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

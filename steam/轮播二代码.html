@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.1.0.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        /*轮播样式设置开始*/
+        .the-biggest{
+            width: 940px;;
+            height: 462px;
+            /*border:1px solid black;*/
+            margin:100px 0 100px 232px;
+            position: relative;
+            background-color: rgb(21,29,44);
+        }
+        .the-biggest .big_title {
+            width: 940px;
+            color: #fff;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: normal;
+            padding-top: 2px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            line-height: 20px;
+            /*background-color: chartreuse;*/
+        }
+        .the-biggest .big_title span{
+            border: 1px solid rgba(255,255,255,0.4);
+            color: #fff !important;
+            padding: 0 15px;
+            font-size: 12px;
+            line-height: 20px;
+            display:block;
+            border-radius: 2px;
+            width: 48px;
+            height: 20px;
+            letter-spacing: normal;
+            float:right;
+        }
+        .the-biggest .big_title span:hover{
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .the-biggest .big{
+            width: 940px;
+            height: 390px;
+            /*float:left;*/
+            overflow: hidden;
+        }
+        .the-biggest .big #page1 .left,
+        .the-biggest .big .page2 .left2{
+            width: 306px;
+            height: 390px;
+            margin-right: 10px;
+            float: left;
+        }
+        .the-biggest .big #page1 .center,
+        .the-biggest .big .page2 .center2{
+            width: 306px;
+            height: 404px;
+            margin-right: 10px;
+            float: left;
+        }
+        .big #page1 .center-pic1,.big #page1 .right-pic1,.big .page2 .center2-pic1,.big .page2 .right2-pic1,.big .page2 .left2-pic1{
+            width: 306px;
+            height: 186.52px;
+            margin-bottom: 15px;
+            float: left;
+        }
+        .big #page1 .center-pic2,.big #page1 .right-pic2,.big .page2 .center2-pic2,.big .page2 .left2-pic2,.big .page2 .right2-pic2{
+            width: 306px;
+            height: 186.52em;
+            float: left;
+        }
+        .the-biggest .big-bottom{
+            width: 940px;
+            height: 36px;
+            padding-bottom: 4px;
+            /*background-color: orange;*/
+            position: relative;
+        }
+        .the-biggest .big-bottom ul{
+            /*width: 60px;*/
+            height: 40px;
+            position: absolute;
+            left:50%;
+            margin-left: -21px;
+            top:12px;
+        }
+        .the-biggest .big-bottom ul li{
+            width: 20px;
+            height: 10px;
+            background-color: #555555;
+            margin-right: 4px;
+            float: left;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .the-biggest .big-left,.the-biggest .big-right{
+            position:absolute;
+            width: 45px;
+            height: 108px;
+            /*margin-top: 148px;*/
+            text-align: center;
+            line-height: 108px;
+            font-size: 40px;
+            /*background:radial-gradient(grey,black);*/
+            color:white;
+            cursor: pointer;
+            top:50%;
+            margin-top: -54px;
+
+        }
+        .the-biggest .big-left{
+            left:-45px;
+
+        }
+        .the-biggest .big-right{
+            left: 939px;
+        }
+        .the-biggest .big-bottom ul .current{
+            background-color: gray;
+            cursor: pointer;
+        }
+        .the-biggest .big-left {
+            background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+        }
+        .the-biggest .big-right{
+            background: linear-gradient(to right,rgb(57,70,85), rgb(17,32,47));
+        }
+        .the-biggest .big-right:hover{
+            background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+        }
+        .the-biggest .big-left:hover{
+            background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+        }
+
+        /*轮播补充*/
+        .aa{
+            width: 300px;
+            height: 250px;
+            background: rgb(189,204,218);
+            position:absolute;
+            display:none;
+        }
+        em{
+            width: 0;
+            height: 0;
+            position:absolute;
+            border:10px solid ;
+            border-color: transparent;
+        }
+        .a1{left:316px;top:31px}
+        .a2{left:316px;top:232px}
+        .a3,.a7{left:630px;top:31px;}
+
+
+        .a4,.a8{left:630px;top:232px}
+        .a5,.a9{left:324px;top:31px;}
+        .a6,.a10{left:324px;top:232px}
+        .b1,.b2,.b3,.b4,.b7,.b8{left: -20px;top: 31px;border-right-color: rgb(189,204,218);}
+        .b5,.b6,.b9,.b10{left:300px;top:31px;border-left-color: rgb(189,204,218);}
+
+
+        /*轮播样式设置结束*/
+    </style>
+</head>
+<body>
+
+<!--轮播大框架-->
+<div class="w">
+    <!--<div class="z">-->
+    <div class="the-biggest">
+        <h2 class="big_title"> 特别优惠 <span>浏览所有</span></h2>
+        <!--左滑动箭头-->
+        <div class="big-left">
+            <span> < </span>
+        </div>
+        <!--轮播右箭头-->
+        <div class="big-right">
+            <span> > </span>
+        </div>
+        <!--轮播主体部分-->
+        <div class="big">
+            <!--第一张游戏页面展示-->
+            <div id="page1">
+                <div class="left">
+                    <img src="left-big.png" alt="">
+                </div>
+                <div class="center">
+                    <div class="center-pic1">
+                        <img src="1.png" alt="">
+                    </div>
+                    <div class="center-pic2">
+                        <img src="2.jpg" alt="">
+                    </div>
+                    <div class="aa a7"><img src="../images/001.png" alt=""> <em class="b7"></em></div>
+                    <div class="aa a8"><img src="../images/002.png" alt=""><em class="b8"></em></div>
+                </div>
+                <div class="right">
+                    <div class="right-pic1">
+                        <img src="3.jpg" alt="">
+                    </div>
+                    <div class="right-pic2">
+                        <img src="4.jpg" alt="">
+                    </div>
+                    <div class="aa a9"><img src="../images/003.png" alt=""> <em class="b9"></em></div>
+                    <div class="aa a10"><img src="../images/003.png" alt=""><em class="b10"></em></div>
+                </div>
+            </div>
+            <!--第二张游戏页面展示-->
+            <div class="page2">
+                <div class="left2">
+                    <div class="left2-pic1">
+                        <img src="06.png" alt="">
+                    </div>
+                    <div class="left2-pic2">
+                        <img src="07.png" alt="">
+                    </div>
+                    <div class="aa a1"><img src="../images/002.png" alt=""> <em class="b1"></em></div>
+                    <div class="aa a2"><img src="../images/003.png" alt=""><em class="b2"></em></div>
+                </div>
+                <div class="center2">
+                    <div class="center2-pic1">
+                        <img src="1.png" alt="">
+                    </div>
+                    <div class="center2-pic2">
+                        <img src="2.jpg" alt="">
+                    </div>
+                    <div class="aa a3"><img src="../images/001.png" alt=""> <em class="b3"></em></div>
+                    <div class="aa a4"><img src="../images/002.png" alt=""><em class="b4"></em></div>
+                </div>
+                <div class="right2">
+                    <div class="right2-pic1">
+                        <img src="09.png" alt="">
+                    </div>
+                    <div class="right2-pic2">
+                        <img src="11.png" alt="">
+                    </div>
+                    <div class="aa a5"><img src="../images/003.png" alt=""> <em class="b5"></em></div>
+                    <div class="aa a6"><img src="../images/003.png" alt=""><em class="b6"></em></div>
+                </div>
+            </div>
+        </div>
+        <!--底部滑动部分-->
+        <div class="big-bottom">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+        <script>
+            var an = 0;
+            //底部按钮滑动动画开始
+            $('ul li').on('mouseenter',function(){
+                an = $(this).index();
+                console.log(an);
+                $(this).addClass('current').siblings('li').removeClass('current');
+                $(' .big > div').eq(an).fadeIn('fast').siblings('div').fadeOut();
+            }).triggerHandler('mouseenter');
+
+            //鼠标移到左箭头开始动画
+            $('.big-left').on('click',function(e){
+                e = e || window.event;
+                e.preventDefault();
+                an--;
+                an < 0 ? an = 1 : an;
+                console.log(an);
+                $('ul > li').eq(an).addClass('current').siblings('li').removeClass('current');
+                $('.big > div').eq(an).fadeIn('slow').siblings('div').fadeOut();
+            });
+
+            //鼠标移到右箭头开始动画
+            $('.big-right').on('click',function(e){
+                e = e || window.event;
+                e.preventDefault();
+                an++;
+                an > 1 ? an = 0 : an;
+                console.log(an);
+                $('ul > Li').eq(an).addClass('current').siblings('li').removeClass('current');
+                $('.big > div').eq(an).fadeIn('slow').siblings('div').fadeOut();
+
+            });
+
+            //轮播鼠标滑过出现提示框部分(可以简化...)
+            $('.page2>.left2>.left2-pic1').on('mouseover',function(){$('.a1').show();});
+            $('.page2>.left2>.left2-pic1').on('mouseout',function(){$('.a1').hide();});
+            $('.page2>.left2>.left2-pic2').on('mouseover',function(){$('.a2').show();});
+            $('.page2>.left2>.left2-pic2').on('mouseout',function(){$('.a2').hide();});
+
+            $('.page2>.center2>.center2-pic1').on('mouseover',function(){$('.a3').show();});
+            $('.page2>.center2>.center2-pic1').on('mouseout',function(){$('.a3').hide();});
+            $('.page2>.center2>.center2-pic2').on('mouseover',function(){$('.a4').show();});
+            $('.page2>.center2>.center2-pic2').on('mouseout',function(){$('.a4').hide();});
+
+            $('.page2>.right2>.right2-pic1').on('mouseover',function(){$('.a5').show();});
+            $('.page2>.right2>.right2-pic1').on('mouseout',function(){$('.a5').hide();});
+            $('.page2>.right2>.right2-pic2').on('mouseover',function(){$('.a6').show();});
+            $('.page2>.right2>.right2-pic2').on('mouseout',function(){$('.a6').hide();});
+
+            $('#page1>.center>.center-pic1').on('mouseover',function(){$('.a7').show();});
+            $('#page1>.center>.center-pic1').on('mouseout',function(){$('.a7').hide();});
+            $('#page1>.center>.center-pic2').on('mouseover',function(){$('.a8').show();});
+            $('#page1>.center>.center-pic2').on('mouseout',function(){$('.a8').hide();});
+
+            $('#page1>.right>.right-pic1').on('mouseover',function(){$('.a9').show();});
+            $('#page1>.right>.right-pic1').on('mouseout',function(){$('.a9').hide();});
+            $('#page1>.right>.right-pic2').on('mouseover',function(){$('.a10').show();});
+            $('#page1>.right>.right-pic2').on('mouseout',function(){$('.a10').hide();})
+
+
+
+        </script>
+
+</body>
+</html>

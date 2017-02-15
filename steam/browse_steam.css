@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.xfx_steam_box{
+    width: 940px;
+    height: 95px;
+    background-color: transparent;
+    float: left;
+    margin:0 0 40px 100px;
+}
+.xfx_steam_box h2{
+    height: 22px;
+    color:#F7F8F8;
+    font-size:17px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.xfx_steam_box .xfx_button_steam_box{
+    width: 940px;
+    height: 58px;
+    /*margin:0px 0 40px 110px;*/
+    margin-top: 10px;
+
+}
+.xfx_button_steam_box  .xfx_button_steam_left,.xfx_button_steam_left_mid,.xfx_button_steam_middle,.xfx_button_steam_right{
+    width: 226px;
+    height: 58px;
+    margin-right: 9px;
+    float: left;
+    background-color: #1D678C;
+    display: block;
+
+    }
+.xfx_button_steam_box  a{
+	height:58px;
+	width:226px;
+    text-decoration: none;
+    display: block;
+    color:#66C0F4;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    line-height: 58px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #000;
+ }
+.xfx_button_steam_box .xfx_big_button {
+    /*text-align: center;*/
+}
+.xfx_button_steam_box a:hover{
+    color:#F7F8F8;
+}

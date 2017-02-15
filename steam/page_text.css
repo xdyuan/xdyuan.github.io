@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page_box{
+    width: 187px;
+    height: 742px;
+    background-color:transparent ;
+    font-size: 14px;
+    margin-left: 20px;
+
+
+}
+.page_box_mark{
+    width: 176px;
+    height: 382px;
+
+}
+.mark_head{
+    color:#9AADBB;
+    margin-top: 17px;
+
+
+}
+.mark_block{
+    height: 62px;
+    width: 176px;
+    margin-top: 10px;
+}
+
+.mark_block ul li{
+    list-style: none;
+    float: left;
+
+
+
+}
+.mark_block ul{
+    width: 176px;
+    height: 20px;
+
+}
+.mark_block li{
+    float: left;
+    position: relative;
+    line-height: 20px;
+}
+.mark_block li  a{
+    display:inline-block;
+    width: 176px;
+    height: 16px;
+    color:#66C0EF;
+    line-height: 16px;
+    font-size: 13px;
+}
+
+.mark_block  .text_mark  a {
+     text-decoration: none;
+    line-height: 16px;
+    width: 176px;
+    text-align: left;
+    display: inline-block;
+    height: 16px;
+    margin-left: 25px;
+}
+
+.mark_block .text_mark  a:hover{
+    color:white;
+}
+
+#page_browse{
+    width: 176px;
+    height: 320px;
+    margin-top: 25px;
+    position: absolute;
+
+
+}
+
+#page_view{
+    width: 176px;
+    height: 67px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.mark_block li  span{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url('images/store_icons.png') ;
+    background-repeat: no-repeat;
+    background-color:#16374F;
+    left:0;
+
+}
+#page_browse li a {
+    margin-left: -1px;
+}
+

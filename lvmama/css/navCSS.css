@@ -1,0 +1,118 @@
+ul{
+    list-style: none;
+}
+.Ren_nav_ul{
+    width: 1250px;
+    height: 44px;
+    background-color: rgb(211,51,119);
+    padding-left:30px;
+    position: relative;
+}
+.Ren_nav_ul .Ren_nav_ul_li{
+    width: auto;
+    height: 100%;
+    float: left;
+    padding: 0 10px;
+}
+/*.Ren_nav_ul .Ren_nav_ul_li:hover {*/
+/*background-color: rgb(168,28,84);*/
+/*}*/
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(1){
+    background-color: rgb(168,28,84)
+}
+.Ren_nav_ul .Ren_nav_ul_li a{
+    display: inline-block;
+    width:auto;
+    height:100%;
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.Ren_nav_ul .Ren_nav_ul_li .navSpan{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background: url("../images/header_icon.png") no-repeat -129px -300px;
+}
+.Ren_nav_ul_li_s div{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+.Ren_nav_ul .Ren_nav_nav{
+    position: absolute;
+    width:1280px;
+    height: 40px;
+}
+.Ren_nav_ul .Ren_nav_nav li{
+    float: left;
+    margin-right: 30px;
+
+}
+.Ren_nav_ul .Ren_nav_nav li a{
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+}
+.Ren_nav_ul .Ren_nav_nav li a:hover{
+    color: rgb(211,51,119);
+}
+.Ren_nav_ul .Ren_nav_nav #Ren_nav_nav_span1{
+    /*display: inline-block;*/
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    top:12px;
+    background: url("../images/header_icon.png") no-repeat -128px -195px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(2) .Ren_nav_nav {
+    left:30px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(3) .Ren_nav_nav {
+    left:30px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(4) .Ren_nav_nav {
+    left:30px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(5) .Ren_nav_nav {
+    left:270px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(6) .Ren_nav_nav{
+    left:270px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(8) .Ren_nav_nav{
+    left:370px;
+}
+.Ren_nav_ul .Ren_nav_nav #Ren_nav_nav_span2{
+    position: absolute;
+    width: 138px;
+    height: 32px;
+    background: url("../images/header_icon.png") no-repeat -108px -266px;
+    top: 4px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(10) .Ren_nav_nav{
+    left:680px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(11) .Ren_nav_nav {
+    left: 760px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(15) .Ren_nav_nav {
+    left: 860px;
+}
+.Ren_nav_ul .Ren_nav_ul_li:nth-child(16) .Ren_nav_nav {
+    left: 760px;
+}
+.Ren_nav_ul_li_color{
+    background-color: rgb(168,28,84)
+}

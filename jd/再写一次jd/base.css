@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片底部默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+
+.shortcut {
+    height: 30px;
+    background-color: #F1F1F1;
+}
+.fl .dt {
+
+    height: 30px;
+    line-height: 30px;
+    padding: 0 25px 0 10px;
+    position: relative;
+}
+
+.dt i,
+.fore i{
+    position: absolute;
+    width: 15px;
+    top: 12px;
+    right: 5px;
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px "宋体";
+
+}
+.dt s,
+.fore s{
+    position: absolute;
+    top: -7px;
+
+}
+.fr li {
+
+    float: left;
+    font: 400 12px/30px "宋体";
+    height: 30px;
+    padding: 0 11px;
+
+}
+.fr .fore {
+    padding: 0 25px 0 11px;
+    position: relative;
+}
+.fr .jd-tel {
+    padding-left: 25px;
+}
+.fr .jd-tel .tel {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    background: url(../images/sprite.png) no-repeat left top;
+}
+.fr .line {
+    height: 12px;
+    width: 1px;
+    background-color: #DDDDDD;
+    padding: 0;
+    margin-top: 9px;
+
+}
+
+.topbanner {
+    height: 80px;
+    width: 100%;
+    background-color: #8A25C6;
+
+}
+.topbanner .w {
+    position: relative;
+}
+.topbanner .close {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    right: 0px;
+    background: url(../images/close.png) no-repeat left top;
+}
+.topbanner .close:hover {
+    background: url(../images/close.png) no-repeat left -19px;
+}
+
+.navgation {
+    height: 144px;
+    border-bottom: 2px solid #B1191A;
+}
+.nav-shang .logo {
+    width: 360px;
+    height: 100px;
+    float: left;
+
+}
+.logo .jd-logo {
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+    background: url(../images/logo.png) no-repeat top left;
+    float: left;
+
+}
+.logo .dongtu {
+    width: 180px;
+    height: 80px;
+    margin-top: 0px;
+    background: url(../images/dong.gif) no-repeat top left;
+    float: right;
+}
+.nav-shang .search {
+    height: 68px;
+    width: 538px;
+    float: left;
+    margin-top: 25px;
+
+}
+.nav-shang .shopcar {
+    width: 139px;
+    height: 34px;
+    float: left;
+    margin-left: 106px;
+    margin-top: 25px;
+    border: 1px solid #DFDFDF;
+
+    position: relative;
+}
+.shopcar .mycar {
+    display: block;
+    font-size: 13px;
+    width: 139px;
+    color: #666666;
+    text-align: center;
+    line-height: 34px;
+
+}
+.shopcar .car-img{
+    position: absolute;
+    width: 18px;
+    height: 13px;
+    background: url(../images/sprite.png) no-repeat left -59px;
+    left: 10px;
+    top: 9px;
+}
+
+.shopcar .icon1 {
+    font: 400 13px/13px simsun;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+.shopcar .icon3 {
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-color: #C81623;
+    right: 20px;
+    top: -3px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    border-radius: 6px 6px 6px 0;
+}
+
+
+.nav-xia {
+    height: 44px;
+
+}
+
+.search .search-box {
+    width: 446px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #666666;
+    font-family: "微软雅黑";
+    float: left;
+}
+
+.search .search-btn {
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    float: right;
+    font: 400 17px/36px "微软雅黑";
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search .hot-words li{
+    float: left;
+    height: 32px;
+    font: 400 12px/32px "宋体";
+    margin-right: 11px;
+}
+
+.nav-xia .shoppingsort {
+    display: block;
+    width: 200px;
+    height: 44px;
+    background-color: #B1191A;
+    font: 700 16px/43px "微软雅黑";
+    padding-left: 10px;
+    color: #fff;
+    float: left;
+}
+.nav-xia .navitem li {
+    float: left;
+    position: relative;
+
+}
+
+.nav-xia .navitem li a{
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    font-family: microsoft yahei;
+    color: #333333;
+}
+.nav-xia .navitem .new {
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    background: url(../images/new.jpg) no-repeat 0 0;
+    top: 0;
+    right: 0;
+
+}
+
+.nav-xia .navitem li a:hover  {
+    color: #C81623;
+}

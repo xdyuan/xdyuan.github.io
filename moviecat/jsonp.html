@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+<div id="result"></div>
+
+
+<script>
+
+    jsonp('http://api.douban.com/v2/movie/in_theaters', {count:10}, function (data) {
+        console.log(data);
+    });
+
+
+    function jsonp (url, data, callback) {
+
+        var myJsonFuncName = Math.random().toString().replace('.', '');
+        var myCallBack = 'my_json_cb' + myJsonFuncName;
+
+        //-1  挂载回调函数
+        window[myCallBack] = callback;
+
+        //http://api.douban.com/v2/movie/in_theaters
+        //0 配置url
+        var queryString = url.indexOf('?')==-1 ? '?' : '&';
+        for (var key in data){
+            queryString += key + '=' + data[key] + '&'
+        }
+        //1  处理回调函数
+        //var myJsonFuncName = Math.random().toString().replace('.', '');
+        queryString += 'callback=' + 'my_json_cb' + myJsonFuncName;
+
+        //2 创建一个script标签
+        var script = document.createElement('script');
+        script.src = url+queryString;
+
+        //3挂载回调函数
+        //这个得在一开始的时候挂载， 否则没法用
+
+        //4 将script标签放到文档中
+        document.body.appendChild(script);
+
+    }
+
+</script>
+
+
+</body>
+</html>

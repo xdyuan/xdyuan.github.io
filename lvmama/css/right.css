@@ -1,0 +1,158 @@
+
+/*背景颜色大盒子定位*/
+.rightsidebar{
+    position: fixed;
+    right:0;
+    top:0;
+    background-color: rgb(51,51,51);
+    width:29px;
+    height:100%;
+    z-index: 2;
+    font-size:10px;
+}
+.rightsidebar span{
+    color: white;
+}
+/*顶部盒子*/
+.rightsidebar .App{
+    text-align: center;
+    cursor: pointer;
+    padding:2px 0 55px;
+}
+/*三脚型图片*/
+.rightsidebar .App span:nth-of-type(1){
+    height:24px;
+    width:20px;
+    background:  url("../images/header_icon.png") no-repeat -56px -105px / 512px 320px;
+    display: inline-block;
+}
+/*手机图片*/
+.rightsidebar .App span:nth-of-type(2){
+     height:22px;
+     width:14px;
+     background:  url("../images/header_icon.png") no-repeat -80px -105px / 512px 320px;
+     display: inline-block;
+ }
+/*隐藏图片*/
+.rightsidebar  .AppCode {
+    position: absolute;
+    right:29px;
+    top:0;
+    display: none;
+    /*z-index: ;*/
+}
+/*中间盒子*/
+.rightsidebar .newLogin{
+    height:95px;
+    border-top:1px solid rgb(65,65,65);
+    border-bottom:1px solid rgb(65,65,65);
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+/*登录*/
+.rightsidebar .newLogin .loGin{
+    height: 40px;
+    padding:10px 0;
+    border-bottom:1px solid rgb(65,65,65);
+    text-align: center;
+}
+/*伪类变背景*/
+.loGin:hover,.regsiter:hover{
+    background-color:#d37;
+}
+.rightsidebar .newLogin .loGin a{
+    width:14px;
+    height:37px;
+    text-decoration: none;
+    display: inline-block;
+}
+.rightsidebar .newLogin .loGin i{
+    width:14px;
+    height:14px;
+    background: url("../images/header_icon.png") no-repeat scroll -32px -28px / 512px 320px;
+    /*background-size:14px 14px ;*/
+    /*background-position: -40px -35px;*/
+    display: inline-block;
+    overflow: hidden;
+    line-height:34px;
+}
+/*注册隐藏*/
+.rightsidebar .newLogin .regsiter {
+    height:25px;
+    padding:4px 0 5px 0;
+    display: block;
+    text-decoration: none;
+}
+.rightsidebar .newLogin .regsiter img{
+    background:url("../images/ad-register.png");
+    width:80px;
+    height: 172px;
+    position: absolute;
+    right: 29px;
+    top:188px;
+    display: none;
+}
+.rightsidebar .newLogin .regsiter span{
+    width:10px;
+    height:22px;
+    display: block;
+    margin-left: 9px;
+}
+/*最下面部分*/
+.rightsidebar .bottom {
+    /*top:250px;*/
+    position: absolute;
+    bottom:20px;
+    text-align: center;
+    width:100%;
+}
+.rightsidebar .bottom a{
+    margin-top: 5px ;
+    padding:8px 0;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.rightsidebar .bottom a:hover{
+    background-color: #d37;
+}
+.rightsidebar .bottom .bm-one i{
+    width:19px;
+    height:22px;
+    display:inline-block;
+    background:  url("../images/header_icon.png") no-repeat -136px -105px / 512px 320px;
+}
+.rightsidebar .bottom .bm-two i{
+    width:19px;
+    height:22px;
+    display:inline-block;
+    background:  url("../images/header_icon.png") no-repeat -33px -105px / 512px 320px;
+}
+.rightsidebar .bottom .bm-three i{
+    width:19px;
+    height:10px;
+    display:inline-block;
+    background:  url("../images/header_icon.png") no-repeat -14px -122px / 512px 320px;
+}
+.rightsidebar .bottom .bm-fox i{
+    width:10px;
+    height:10px;
+    display:inline-block;
+    background:  url("../images/header_icon.png") no-repeat -120px -112px / 512px 320px;
+    transition:transform 500ms ease;
+}
+.rightsidebar .bottom .bm-fox:hover
+i{
+    transform:rotateZ(180deg);
+}
+.rightsidebar .bottom .bm-box{
+    width:61px;
+    height:66px;
+    background:  url("../images/header_icon.png") no-repeat -1px -142px / 512px 320px;
+    position: absolute;
+    right: -60px;
+    bottom:-8px;
+    /*z-index:1;*/
+    cursor: pointer;
+}

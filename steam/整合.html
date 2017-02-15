@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #bigbox{
+            position: relative;
+            width: 1265px;
+            height: 850px;
+            background-color: #203144;
+        }
+        #button{
+            list-style: none;
+            position: absolute;
+            left:200px;
+            width: 330px;
+            height: 35px;
+            margin-top: 4px;
+            margin-left: 5px;
+
+        }
+        #bigbox .wallbox{
+            position: absolute;
+            top: 35px;
+            left: 200px;
+            width: 1065px;
+            height: 805px;
+            overflow: hidden;
+            list-style: none;
+            background-color: #2a475e;
+
+
+        }
+        #button li{
+            display: inline-block;
+            width: 80px;
+            height: 23px;
+            float: left;
+            text-align: center;
+            line-height: 35px;
+            color: rgb(79,148,188);
+            font-size: x-small;
+        }
+        #bigbox .wallbox li{
+            position: relative;
+
+        }
+        .wallbox li div{
+            width: 622px;
+            height: 600px;
+            background-color: #2a475e;
+
+        }
+        #button .currentF{
+            background-color: #2a475e;
+            height: 36px;
+            border-bottom: none;
+            color: #F7F7F7;
+        }
+        #bigbox .currentF1{
+            background-color: #9dc3d9;
+            width: 670px;
+            border-color: #9dc3d9;
+        }
+        #bigbox li .price{
+            color: rgb(172,219,245);
+        }
+        #bigbox .currentF1 .price {
+            color: black;
+        }
+        #box1 li,#box2 li,#box3 li,#box4 li{
+            width: 620px;
+            height: 68px;
+            border: 1px solid #223848;
+            margin-top: 5px;
+            float: left;
+            background-color: #223848;
+        }
+        #pit{
+            width: 308px;
+            height: 745px;
+            position: absolute;
+            left: 837px;
+            margin-top: 40px;
+            background-color: #9dc3d9;
+            background-repeat: no-repeat;
+
+        }
+        #bigbox .insideBox{
+            width:184px;
+            height: 68px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top: none;
+            position: absolute;
+            background-color: #cccccc;
+        }
+        #bottom{
+            width: 622px;
+            height: 40px;
+            /*margin-bottom: 150px;*/
+            background-color: #223848;
+            position: absolute;
+            top:800px;
+            left: 200px;
+        }
+        #bottom div{
+            display: inline-block;
+            width: 75px;
+            height: 26px;
+            border: 1px solid grey;
+            color: white;
+            text-align: center;
+            line-height: 26px;
+            font-size: x-small;
+            /*border-radius: 45px 45px 45px 45px;*/
+        }
+        #bottom #bb1_button1{
+            position: absolute;
+            left: 426px;
+            top: 7px;
+
+        }
+        #bottom #bb1_button2{
+            position: absolute;
+            left: 536px;
+            top: 7px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            display: inline-block;
+            width: 70px;
+            height: 20px;
+            line-height: 20px;
+            font-size: x-small;
+        }
+        #bottom #bb1_text1{
+            position: absolute;
+            top: 11px;
+            left: 357px;
+        }
+        #bottom #bb1_text2{
+            position: absolute;
+            top: 11px;
+            left: 484px;
+        }
+        #bottom #bb2_button1{
+            position: absolute;
+            top: 7px;
+            left: 400px;
+        }
+        #bottom #bb2_button2{
+            position: absolute;
+            top: 7px;
+            left: 518px;
+            width: 90px;
+        }
+        #bottom #bb2_text1{
+            position: absolute;
+            top: 11px;
+            left: 326px;
+        }
+        #bottom #bb2_text2{
+            position: absolute;
+            top: 11px;
+            left: 462px;
+        }
+        #bottom #bb3_button1{
+            position: absolute;
+            top: 11px;
+            left: 530px;
+        }
+        #bottom #bb3_text1{
+            position: absolute;
+            top: 15px;
+            left: 450px;
+        }
+        #bottom #bb4_button1{
+            position: absolute;
+            top: 11px;
+            left: 530px;
+        }
+        #bottom #bb4_text1{
+            position: absolute;
+            top: 15px;
+            left: 450px;
+        }
+        #bigbox .title{
+            width: 370px;
+            height: 20px;
+            position: absolute;
+            left: 200px;
+            top: 6px;
+            line-height: 20px;
+            text-align: left;
+            font-size: small;
+            color: #F7F7F7;
+        }
+        #bigbox .describe{
+            width: 230px;
+            height: 15px;
+            position: absolute;
+            left: 200px;
+            top: 45px;
+            line-height: 15px;
+            text-align: left;
+            font-size: 5px;
+            color: rgb(53,73,89);
+        }
+        #bigbox .price{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 565px;
+            top: 24px;
+            text-align: center;
+            line-height: 30px;
+            font-size: small;
+            color: rgb(172,219,245);
+        }
+        #bigbox .oldprice{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 570px;
+            top: 18px;
+            text-align: center;
+            line-height: 10px;
+            font-size: xx-small;
+            text-decoration: line-through;
+            color: rgb(113,147,166);
+        }
+        #bigbox .offbox{
+            width: 39px;
+            height: 18px;
+            position: absolute;
+            left:480px;
+            top: 18px;
+        }
+        #bigbox .currentF1 .title{
+            color: black;
+        }
+        /*间隔*/
+        .price_img_box{
+            width: 1265px;
+            height: 320px;
+            padding-left: 33px;
+            padding-top: 27px;
+            background-color:rgb(27,40,56);
+            position: relative;
+        }
+
+        .price_img_box p{
+            color:#F7F8F8;
+            font-size:20px ;
+            float: left;
+        }
+        .price_img_bigBox{
+            width: 940px;
+            height: 206px;
+            background-color: rgb(27,40,56);
+            margin: auto;
+        }
+        .price_min{
+            width: 940px;
+            height: 22px;
+            position: relative;
+        }
+        .price_img_minBox{
+            width: 940px;
+            height: 134px;
+            position: relative;
+            margin-top: 10px;
+        }
+        .price_img_minBox .priceImg{
+            width: 227px;
+            height:134px;
+        }
+        .slider-ctrl{
+            width: 940px;
+            height:50px;
+            margin: auto;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .price_img_minBox .priceImg{
+            float: left;
+            margin-right: 8px;
+            overflow: hidden;
+        }
+        .price_img_minBox .minI{
+            width: 940px;
+            height: 134px;
+            top:0;
+            position: absolute;
+
+        }
+        .price_img_minBox .minI ul {
+            height: 134px;
+            display: none;
+        }
+        .price_min .textRight {
+            width: 182px;
+            height: 28px;
+            position: absolute;
+            right:0;
+            margin-top: 3px;
+            margin-right: 9px;
+        }
+        .textRight .boder-prc1 ,.boder-prc2{
+            font-size: 12px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 27px;
+            color:#FFF8D9;
+        }
+        .textRight  .boder-prc1 {
+            position: absolute;
+            width: 88px;
+            height: 22px;
+            border:1px solid #767E88;
+            display: block;
+        }
+        .textRight  .boder-prc2{
+            position: absolute;
+            width: 88px;
+            height: 22px;
+            right:0;
+            border:1px solid #767E88;
+            display: block;
+        }
+        #btn-left{
+            position: absolute;
+            top: 27px;
+            left: 150px;
+        }
+
+        #btn-left button{
+            width: 45px;
+            height: 106px;
+            margin-top: 35px;
+            background-color:rgb(21,31,43);
+            outline: none;
+            border:none;
+
+        }
+        #btn-left button .bt1{
+            width: 23px;
+            height: 36px;
+            color:#F7F8F8;
+            font-size: 40px;
+        }
+        #btn-left button:hover{
+            background-color:#445B6E;
+        }
+
+        #btn-right{
+            position: absolute;
+            right:125px;
+            top:27px;
+        }
+        #btn-right button{
+            width: 45px;
+            height: 106px;
+            margin-top: 35px;
+            background-color: #172230;
+            outline: none;
+            border:none;
+        }
+        #btn-right button .bt2{
+            width: 23px;
+            height: 36px;
+            color:#F7F8F8;
+            font-size: 40px;
+        }
+        #btn-right button:hover{
+            background-color: #445B6E;
+        }
+        .slider-ctrl .ctrl1{
+            width: 15px;
+            height: 9px;
+            background-color: rgb(72,83,95);
+            position: absolute;
+            z-index: 0;
+            margin-left: 445px;
+            margin-top: 20px;
+            border-radius: 2px;
+            background-image: url('images/icon-img.png');
+        }
+        .price_img_minBox .hideBox-min{
+            position: absolute;
+            z-index: 1;
+            left: 226px;
+            overflow: hidden;
+            display: inline-block;
+
+        }
+        .slider-ctrl .ctrl2{
+            width: 15px;
+            height: 9px;
+            background-color: #48535F ;
+            position: absolute;
+            margin-left: 465px;
+            margin-top: 20px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        #pt4,#pt8{
+            left: 390px;
+        }
+        #pt3,#pt7{
+            left: 678px;
+        }
+        #pt2,#pt6{
+            left: 452px;
+        }
+    </style>
+</head>
+<body>
+<div id="bigbox">
+    <ul class="wallbox">
+        <li>
+            <div id="box1">
+                <ul>
+                    <li class="currentF1">
+                        <div class="insideBox"></div>
+                        <p class="title">Zup! 2</p>
+                        <p class="describe">独立 休闲 解谜 单人</p>
+                        <p class="offbox" style="background-image: url('17off.png')"></p>
+                        <p class="oldprice">￥6</p>
+                        <p class="price">￥5</p>
+                    </li>
+                    <li>
+                        <div class="insideBox"></div>
+                        <p class="title">Euro Truck Simulator 2 - Vive la France!</p>
+                        <p class="describe">模拟 独立 驾驶 开放世界</p>
+                        <p class="price">￥95</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Steep</p>
+                        <p class="describe">体育 开放世界 动作 多人 氛围</p>
+                        <p class="price">￥248</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Townsmen</p>
+                        <p class="describe">策略 模拟 休闲 城市建造</p>
+                        <p class="offbox" style="background-image: url('18off.png')"></p>
+                        <p class="oldprice">￥40</p>
+                        <p class="price">￥33</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Tom Clancy`s Rainbow Six@ Siege - Year 2 Pass</p>
+                        <p class="describe">动作 第一人称射击</p>
+                        <p class="price">￥128</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Radiation Island</p>
+                        <p class="describe">动作 冒险 独立 生存</p>
+                        <p class="price">￥15</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Watch_Dogs@ 2</p>
+                        <p class="describe">光明会 黑客 开放世界 动作 跑酷</p>
+                        <p class="price">￥248</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Marmoset Toolbag 3</p>
+                        <p class="describe">动画制作与建模 设计&插画 实用工具</p>
+                        <p class="price">￥470</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">PRO EVOLUTION SOCCER 2017</p>
+                        <p class="describe">体育 免费 足球/美式足球</p>
+                        <p class="price">免费</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Bullshot</p>
+                        <p class="describe">独立 动作 怀旧 平台 太空</p>
+                        <p class="price">￥21</p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div id="box2">
+                <ul>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Watch_Dogs@ 2</p>
+                        <p class="describe">光明会 黑客 开放 动作</p>
+                        <p class="price">￥248</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Grand Theft Auto V</p>
+                        <p class="describe">开放世界 动作 多人 第一人称视角</p>
+                        <p class="price">￥189</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Counter-Strike: Global Offensive</p>
+                        <p class="describe">第一人称射击 多人 射击 动作</p>
+                        <p class="price">￥48</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Planet Coaster</p>
+                        <p class="describe">模拟 建造 管理 沙盒</p>
+                        <p class="price">￥287</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Euro Truck Simulator 2 - Vive la France!</p>
+                        <p class="describe">模拟独立 驾驶 开放世界</p>
+                        <p class="price">￥95</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Space Hulk: Deathwing</p>
+                        <p class="describe">战锤40K 动作 在线合作 第一人称射击</p>
+                        <p class="offbox" style="background-image: url('15off.png')"></p>
+                        <p class="oldprice">￥170</p>
+                        <p class="price">￥144</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Tom Clancy`s Rainbow Six@ Siege - Year 2 Pass</p>
+                        <p class="describe">动作 第一人称射击</p>
+                        <p class="price">￥128</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Steep</p>
+                        <p class="describe">体育 开放世界 动作 多人</p>
+                        <p class="price">￥248</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">ICEY</p>
+                        <p class="describe">动作 独立 冒险 角色扮演</p>
+                        <p class="price">￥38</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">RimWorld</p>
+                        <p class="describe">Early Access 生存 建筑建造 策略</p>
+                        <p class="price">￥88</p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div id="box3">
+                <ul>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Patchwork</p>
+                        <p class="describe">策略 独立 休闲</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Pinball FX2 Betesda@ Pinball</p>
+                        <p class="describe">休闲 模拟</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Shadow Tactics: Blades of the Shogun</p>
+                        <p class="describe">潜行 忍着 战术 策略</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Ascension VR - War of Shadows</p>
+                        <p class="describe">策略 独立</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Sacred Line Genesis Remix - Definitive Soun...</p>
+                        <p class="describe">冒险 独立 休闲 血腥</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Drop Alive - Deluxe Edition</p>
+                        <p class="describe">独立 休闲</p>
+                        <p class="price"></p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Drop Alive</p>
+                        <p class="describe">免费 独立 休闲</p>
+                        <p class="price">免费</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Arizona Sunshine</p>
+                        <p class="describe">独立 丧尸 动作 冒险</p>
+                        <p class="offbox" style="background-image: url('15off.png')"></p>
+                        <p class="oldprice">￥112</p>
+                        <p class="price">￥95</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">South Park:The Fractured but Whole</p>
+                        <p class="describe">角色扮演 欢乐 搞笑 黑色幽默</p>
+                        <p class="price">248</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Sea Dogs: To Each His Own - Flying the Joll...</p>
+                        <p class="describe">角色扮演</p>
+                        <p class="price"></p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div id="box4">
+                <ul>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Miscreated</p>
+                        <p class="describe">Early Access 生存 开放世界 丧尸</p>
+                        <p class="offbox" style="background-image: url('50off.png')"></p>
+                        <p class="oldprice">￥68</p>
+                        <p class="price">￥34</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">CPUCores::Maximize Your FPS</p>
+                        <p class="describe">应用工具 第一人称射击</p>
+                        <p class="offbox" style="background-image: url('51off.png')"></p>
+                        <p class="oldprice">￥123</p>
+                        <p class="price">￥60</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Block`hood</p>
+                        <p class="describe">Early Access 城市建造 模拟 独立</p>
+                        <p class="offbox" style="background-image: url('42off.png')"></p>
+                        <p class="oldprice">￥36</p>
+                        <p class="price">￥21</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Robot Roller-Derby Disco Dodgeball</p>
+                        <p class="describe">多人 独立 好评原声音乐 第一人称射击</p>
+                        <p class="offbox" style="background-image: url('81off.png')"></p>
+                        <p class="oldprice">￥36</p>
+                        <p class="price">￥7</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Book of Demons</p>
+                        <p class="describe">Early Access 迷宫探索 砍杀 动作角色扮演</p>
+                        <p class="offbox" style="background-image: url('31off.png')"></p>
+                        <p class="oldprice">￥68</p>
+                        <p class="price">￥47</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">8-Bit Armles</p>
+                        <p class="describe">策略 即时战略 独立 模拟</p>
+                        <p class="offbox" style="background-image: url('50off.png')"></p>
+                        <p class="oldprice">￥48</p>
+                        <p class="price">￥24</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Long Live The Queen</p>
+                        <p class="describe">日本动画 视觉小说 女主人翁 独立</p>
+                        <p class="offbox" style="background-image: url('47off.png')"></p>
+                        <p class="oldprice">￥36</p>
+                        <p class="price">￥19</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">EARTHLOCK: Festival of Magic</p>
+                        <p class="describe">冒险 角色扮演 独立 奇幻</p>
+                        <p class="offbox" style="background-image: url('34off.png')"></p>
+                        <p class="oldprice">￥88</p>
+                        <p class="price">￥58</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Valley</p>
+                        <p class="describe">冒险 独立 动作 第一人称视角</p>
+                        <p class="offbox" style="background-image: url('31off.png')"></p>
+                        <p class="oldprice">￥68</p>
+                        <p class="price">￥47</p>
+                    </li>
+                    <li><div class="insideBox"></div>
+                        <p class="title">Prototype</p>
+                        <p class="describe">动作 开放世界 冒险 第三人称视角</p>
+                        <p class="offbox" style="background-image: url('75off.png')"></p>
+                        <p class="oldprice">￥68</p>
+                        <p class="price">￥17</p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div id="pit">
+
+    </div>
+    <ol id="button">
+        <li class="currentF">热门新品</li>
+        <li>热销商品</li>
+        <li>即将推出</li>
+        <li>优惠</li>
+    </ol>
+    <div id="bottom">
+        <ul>
+            <li>
+                <p id="bb1_text1">查看更多:</p>
+                <div id="bb1_button1">热门新品</div>
+                <p id="bb1_text2">或</p>
+                <div id="bb1_button2">所有新品</div>
+            </li>
+            <li>
+                <p id="bb2_text1">查看更多:</p>
+                <div id="bb2_button1">热销商品</div>
+                <p id="bb2_text2">或</p>
+                <div id="bb2_button2">全球热销商品</div>
+            </li>
+            <li>
+                <p id="bb3_text1">查看更多:</p>
+                <div id="bb3_button1">即将推出</div>
+            </li>
+            <li>
+                <p id="bb4_text1">查看更多:</p>
+                <div id="bb4_button1">优惠</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--低于40的价格大盒子-->
+<div class="price_img_box">
+    <!--中间盒子-->
+    <div class="price_img_bigBox" >
+        <!--价格盒子-->
+        <div class="price_min">
+            <p><b>低&nbsp于&nbsp&nbsp&nbsp￥&nbsp4&nbsp0</b></p>
+            <div class="textRight">
+                <a href="" class="boder-prc1"><span><b>低于￥40</b></span></a>
+                <a href="" class="boder-prc2"><span><b>低于￥20</b></span></a>
+            </div>
+        </div>
+        <!--中间图片盒子-->
+        <div  class="price_img_minBox" >
+            <ul class="minI">
+                <li  class="priceImg"><img src="images/img-1.png" alt=""></li>
+                <li  id="pt1" class="hideBox-min"><img src="images/hidebox-1.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-2.png" alt=""></li>
+                <li  id="pt2" class="hideBox-min"><img src="images/hidebox-2.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-3.png" alt=""></li>
+                <li  id="pt3" class="hideBox-min"><img src="images/hidebox-3.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-4.png" alt=""></li>
+                <li  id="pt4" class="hideBox-min"><img src="images/hidebox-4.png" alt=""></li>
+            </ul>
+            <ul class="minII">
+                <li  class="priceImg"><img src="images/img-5.png" alt=""></li>
+                <li  id="pt5" class="hideBox-min"><img src="images/hidebox-5.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-6.png" alt=""></li>
+                <li  id="pt6" class="hideBox-min"><img src="images/hidebox-6.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-7.png" alt=""></li>
+                <li  id="pt7" class="hideBox-min"><img src="images/hidebox-7.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-8.png" alt=""></li>
+                <li  id="pt8" class="hideBox-min"><img src="images/hidebox-8.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="slider_ctrl" class="slider-ctrl">
+            <span class="ctrl1"></span>
+            <span class="ctrl2"></span>
+        </div>
+    </div>
+    <!--按钮部分-->
+    <div id="btn-left">
+        <button id="btn_prev"><span class="bt1"><</span></button>
+    </div>
+    <div id="btn-right">
+        <button id="btn_next"><span class="bt2">></span></button>
+    </div>
+</div>
+<script src="jquery-3.1.0.js"></script>
+<script>
+    var indexF1 = 0;
+    var indexCh = 0;
+    var pit = $('#pit');
+    var insideBox = document.getElementsByClassName('insideBox');
+    for (var i = 0;i < insideBox.length;i++){
+        document.getElementsByClassName('insideBox')[i].style.backgroundImage = 'url(insideIMG'+ i + '.jpg)';
+    }
+    $('#bigbox > ul > li').eq(0).fadeIn('fast').siblings('li').fadeOut('fast');
+    $('#bottom > ul > li').eq(0).fadeIn('fast').siblings('li').fadeOut('fast');
+    pit.css('background-image','url(outsideIMG' + 0 + 0 + '.png)').fadeIn('fast');
+    $('#bigbox > ol > li').on('click',function () {
+        indexF1 = $(this).index();
+        $(this).addClass('currentF').siblings('li').removeClass('currentF');
+        $('#bigbox > ul > li').eq(indexF1).fadeIn('fast').siblings('li').fadeOut('fast');
+        var list = $('#bigbox > .wallbox >li');
+        var listCh = list.children()[indexF1];
+        listCh.className = 'id1F1';
+        $('.id1F1 > ul > li').on('mouseenter',function () {
+            $(this).addClass('currentF1').siblings('li').removeClass('currentF1');
+            listCh.className = '';
+            indexCh = $(this).index();
+            //哥哥写的,记住这个格式
+            pit.css('background-image','url(outsideIMG' + indexF1 + indexCh + '.png)').fadeIn('fast');
+        });
+        $('#bottom > ul > li').eq(indexF1).fadeIn('fast').siblings('li').fadeOut('fast');
+    }).triggerHandler('mouseenter');
+    $('#bottom > ul > li > div').on('mouseenter',function () {
+        $(this).css('border-color','#f7f7f7').siblings('div').css('border-color','grey');
+    });
+    //隔开
+    var indexFR = 0;
+    var currentName;
+    var indexCu = 0;
+    //    var hideBox =document.getElementsByClassName('hideBox-min');
+    //    for (var i = 0;i<=3;i++){
+    //        if(i!=3){
+    //            document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * i;
+    //        }
+    //        else  document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * (i - 1);
+    //    }
+    $('.hideBox-min').fadeOut('fast');
+    $('.slider-ctrl > span').eq(0).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+    $('.price_img_minBox > ul').eq(0).fadeIn('fast').siblings('ul').fadeOut('fast');
+    $('.price_img_minBox > ul').eq(0).addClass('currentF2').siblings('ul').removeClass('currentF2');
+    $('.currentF2 > .priceImg').on('mouseenter',function () {
+        indexCu =  $(this).index();
+        $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 > .hideBox-min').fadeOut('fast');
+    });
+    $('.currentF2 > .priceImg').on('mouseout',function () {
+        $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+    });
+    $('#slider_ctrl > span').on('mouseenter',function () {
+        indexFR = $(this).index();
+        $(this).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+        $('.currentF2 > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 > .hideBox-min').fadeOut('fast');
+        });
+        $('.currentF2 > .priceImg').on('mouseout',function () {
+            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('#btn-left').on('click',function () {
+        indexFR--;
+        if (indexFR < 0){
+            indexFR = 1;
+        }
+        $('.slider-ctrl > span').eq(indexFR).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+        $('.currentF2 > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+        });
+        $('.currentF2 > .priceImg').on('mouseout',function () {
+            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('#btn-right').on('click',function () {
+        indexFR++;
+        if (indexFR > 1){
+            indexFR= 0;
+        }
+        $('.slider-ctrl > span').eq(indexFR).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+        $('.currentF2 > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+        });
+        $('.currentF2 > .priceImg').on('mouseout',function () {
+            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('.textRight > a').on('mouseenter',function () {
+        $(this).css('border-color','white').siblings('a').css('border-color','#767e88');
+    });
+
+</script>
+<
+</body>
+</html>

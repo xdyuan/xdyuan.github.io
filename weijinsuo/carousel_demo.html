@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .item {
+            height: 410px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+<script>
+   var name = "a";
+    var obj = {
+        name: 'b',
+        getName: function () {
+            return function () {
+                return this.name;
+            }
+        }
+    };
+   alert(obj.getName()());
+    alert(obj.getName().call(obj));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.steam_box{
+    width: 940px;
+    height: 95px;
+    background-color: #16374F;
+    float: left;
+}
+.steam_box h2{
+    height: 22px;
+    /*background-color: aqua;*/
+    color:#F7F8F8;
+    font-size:20px ;
+}
+.steam_box .button_steam_box{
+    width: 940px;
+    height: 58px;
+    margin:40px 0 40px 0;
+
+    /*background-color: red;*/
+    margin-top: 10px;
+
+
+}
+.button_steam_box  .button_steam_left,.button_steam_left_mid,.button_steam_middle,.button_steam_right{
+    width: 226px;
+    height: 58px;
+    margin-right: 9px;
+    float: left;
+    background-color: #1D678C;
+
+
+}
+.button_steam_box  a{
+    text-decoration: none;
+    color:#66C0F4;
+    font-size: 20px;
+    text-align: center;
+   display: inline-block;
+    line-height: 58px;
+    margin-left: 78px;
+
+
+
+}
+
+.button_steam_box .big_button {
+
+    text-align: center;
+}
+
+.button_steam_box a:hover{
+    color:#F7F8F8;
+
+}

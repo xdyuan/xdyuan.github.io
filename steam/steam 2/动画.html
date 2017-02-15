@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+}
+.price_img_box{
+    width: 1030px;
+    height: 320px;
+    background-color:rgb(27,40,56);
+    position: relative;
+}
+
+.price_img_box p{
+    color:#F7F8F8;
+    font-size:20px ;
+    float: left;
+}
+.price_img_bigBox{
+    width: 940px;
+    height: 206px;
+    background-color: rgb(27,40,56);
+    margin: auto;
+}
+.price_min{
+    width: 940px;
+    height: 22px;
+    position: relative;
+}
+.price_img_minBox{
+    width: 940px;
+    height: 134px;
+    position: relative;
+    margin-top: 10px;
+}
+.price_img_minBox .priceImg{
+    width: 227px;
+    height:134px;
+}
+.slider-ctrl{
+    width: 940px;
+    height:50px;
+    margin: auto;
+    position: relative;
+}
+ ul{
+    list-style: none;
+}
+
+.price_img_minBox .priceImg{
+    float: left;
+    margin-right: 8px;
+    overflow: hidden;
+}
+.price_img_minBox .minI{
+    width: 940px;
+    height: 134px;
+    top:0;
+    position: absolute;
+
+}
+.price_img_minBox .minI ul {
+    height: 134px;
+    display: none;
+}
+.price_min .textRight {
+    width: 182px;
+    height: 28px;
+    position: absolute;
+    right:0;
+    margin-top: 3px;
+    margin-right: 9px;
+}
+.textRight .boder-prc1 ,.boder-prc2{
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 27px;
+    color:#FFF8D9;
+}
+.textRight  .boder-prc1 {
+position: absolute;
+    width: 88px;
+    height: 22px;
+    border:1px solid #767E88;
+    display: block;
+}
+.textRight  .boder-prc2{
+    position: absolute;
+    width: 88px;
+    height: 22px;
+    right:0;
+    border:1px solid #767E88;
+    display: block;
+}
+#btn-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#btn-left button{
+    width: 45px;
+    height: 106px;
+    margin-top: 35px;
+    background-color:rgb(21,31,43);
+    outline: none;
+    border:none;
+
+}
+#btn-left button .bt1{
+    width: 23px;
+    height: 36px;
+    color:#F7F8F8;
+    font-size: 40px;
+}
+#btn-left button:hover{
+    background-color:#445B6E;
+}
+
+#btn-right{
+    position: absolute;
+    right:8px;
+    top:0;
+}
+#btn-right button{
+    width: 45px;
+    height: 106px;
+    margin-top: 35px;
+    background-color: #172230;
+    outline: none;
+    border:none;
+}
+#btn-right button .bt2{
+    width: 23px;
+    height: 36px;
+    color:#F7F8F8;
+    font-size: 40px;
+}
+#btn-right button:hover{
+    background-color: #445B6E;
+}
+ .slider-ctrl .ctrl1{
+     width: 15px;
+     height: 9px;
+     background-color: rgb(72,83,95);
+     position: absolute;
+     z-index: 0;
+     margin-left: 445px;
+     margin-top: 20px;
+     border-radius: 2px;
+     background-image: url('images/icon-img.png');
+ }
+.price_img_minBox .hideBox-min{
+    position: absolute;
+    z-index: 1;
+    left: 226px;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.slider-ctrl .ctrl2{
+    width: 15px;
+    height: 9px;
+    background-color: #48535F ;
+    position: absolute;
+    margin-left: 465px;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#pt4,#pt8{
+    left: 390px;
+}
+#pt3,#pt7{
+    left: 678px;
+}
+#pt2,#pt6{
+    left: 452px;
+}
+    </style>
+</head>
+<body>
+<!--低于40的价格大盒子-->
+<div class="price_img_box">
+    <!--中间盒子-->
+    <div class="price_img_bigBox" >
+        <!--价格盒子-->
+        <div class="price_min">
+            <p><b>低&nbsp于&nbsp&nbsp&nbsp￥&nbsp4&nbsp0</b></p>
+            <div class="textRight">
+                <a href="" class="boder-prc1"><span><b>低于￥40</b></span></a>
+                <a href="" class="boder-prc2"><span><b>低于￥20</b></span></a>
+             </div>
+        </div>
+        <!--中间图片盒子-->
+        <div  class="price_img_minBox" >
+            <ul class="minI">
+                <li  class="priceImg"><img src="images/img-1.png" alt=""></li>
+                <li  id="pt1" class="hideBox-min"><img src="images/hidebox-1.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-2.png" alt=""></li>
+                <li  id="pt2" class="hideBox-min"><img src="images/hidebox-2.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-3.png" alt=""></li>
+                <li  id="pt3" class="hideBox-min"><img src="images/hidebox-3.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-4.png" alt=""></li>
+                <li  id="pt4" class="hideBox-min"><img src="images/hidebox-4.png" alt=""></li>
+            </ul>
+            <ul class="minII">
+                <li  class="priceImg"><img src="images/img-5.png" alt=""></li>
+                <li  id="pt5" class="hideBox-min"><img src="images/hidebox-5.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-6.png" alt=""></li>
+                <li  id="pt6" class="hideBox-min"><img src="images/hidebox-6.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-7.png" alt=""></li>
+                <li  id="pt7" class="hideBox-min"><img src="images/hidebox-7.png" alt=""></li>
+                <li  class="priceImg"><img src="images/img-8.png" alt=""></li>
+                <li  id="pt8" class="hideBox-min"><img src="images/hidebox-8.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="slider_ctrl" class="slider-ctrl">
+            <span class="ctrl1"></span>
+            <span class="ctrl2"></span>
+        </div>
+    </div>
+    <!--按钮部分-->
+    <div id="btn-left">
+        <button id="btn_prev"><span class="bt1"><</span></button>
+    </div>
+    <div id="btn-right">
+        <button id="btn_next"><span class="bt2">></span></button>
+    </div>
+</div>
+<script src="jquery-3.1.0.js"></script>
+<script type="text/javascript">
+    var index = 0;
+    var currentName;
+    var indexCu = 0;
+//    var hideBox =document.getElementsByClassName('hideBox-min');
+//    for (var i = 0;i<=3;i++){
+//        if(i!=3){
+//            document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * i;
+//        }
+//        else  document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * (i - 1);
+//    }
+    $('.hideBox-min').fadeOut('fast');
+    $('.slider-ctrl > span').eq(0).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+    $('.price_img_minBox > ul').eq(0).fadeIn('fast').siblings('ul').fadeOut('fast');
+    $('.price_img_minBox > ul').eq(0).addClass('currentF2').siblings('ul').removeClass('currentF2');
+    $('.currentF2 > .priceImg').on('mouseenter',function () {
+        indexCu =  $(this).index();
+        console.log(indexCu);
+        $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 > .hideBox-min').fadeOut('fast');
+    });
+    $('.currentF2 > .priceImg').on('mouseout',function () {
+        $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+    });
+    $('#slider_ctrl > span').on('mouseenter',function () {
+        index = $(this).index();
+        $(this).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(index).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(index).addClass('current').siblings('ul').removeClass('current');
+        $('.current > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            console.log(indexCu);
+            $('.current > li').eq(indexCu + 1).fadeIn('fast').siblings('.current > .hideBox-min').fadeOut('fast');
+        });
+        $('.current > .priceImg').on('mouseout',function () {
+            $('.current > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('#btn-left').on('click',function () {
+        index--;
+        if (index < 0){
+            index = 1;
+        }
+        $('.slider-ctrl > span').eq(index).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(index).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(index).addClass('currentF2').siblings('ul').removeClass('currentF2');
+        $('.currentF2 > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            console.log(indexCu);
+            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+        });
+        $('.currentF2 > .priceImg').on('mouseout',function () {
+            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('#btn-right').on('click',function () {
+            index++;
+        if (index > 1){
+            index = 0;
+        }
+        $('.slider-ctrl > span').eq(index).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+        $('.price_img_minBox > ul').eq(index).fadeIn('fast').siblings('ul').fadeOut('fast');
+        $('.price_img_minBox > ul').eq(index).addClass('currentF2').siblings('ul').removeClass('currentF2');
+        $('.currentF2 > .priceImg').on('mouseenter',function () {
+            indexCu =  $(this).index();
+            console.log(indexCu);
+            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+        });
+        $('.currentF2 > .priceImg').on('mouseout',function () {
+            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+        })
+    });
+    $('.textRight > a').on('mouseenter',function () {
+        $(this).css('border-color','white').siblings('a').css('border-color','#767e88');
+    });
+
+</script>
+
+</body>
+</html>

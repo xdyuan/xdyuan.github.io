@@ -1,0 +1,46 @@
+.leftsidebar{
+    top:60px;
+    position: fixed;
+    left:5px;
+    width:1px;
+    border-left: 1px dashed #ddd;
+    display: none;
+    z-index: 2;
+}
+.leftsidebar ul{
+    margin: 0 0 0 -5px;
+    list-style: none;
+}
+.leftsidebar ul li{
+    width:9px;
+    height:9px;
+    position: relative;
+    float: left;
+    margin: 0 0 32px 0 ;
+    background: url("../images/icon_index_new.png") no-repeat -32px -127px;
+}
+.leftsidebar ul li h3{
+    /*color: #333;*/
+    width: 40px;
+    font-size: 12px;
+    left:15px;
+    top:-2px;
+    position: absolute;
+    font-weight: normal;
+    cursor: pointer;
+}
+.leftsidebar ul li h3 a{
+    width: 100%;
+    height: 100%;
+    display:block;
+    position:absolute;
+    top:0;
+}
+.leftsidebar ul li:hover{
+        background: url("../images/icon_index_new.png") no-repeat -7px -127px;
+        color: #df1078;
+}
+.leftsidebar ul .cart{
+    color: #df1078;
+    background: url("../images/icon_index_new.png") no-repeat -7px -127px;
+}

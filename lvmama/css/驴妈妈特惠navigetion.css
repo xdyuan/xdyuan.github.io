@@ -1,0 +1,77 @@
+
+.special-box ul, .special-box a{
+	list-style: none;
+	text-decoration: none;
+}
+/*整体框架大盒子*/
+.special-box{
+		width: 1200px;
+		height: 541px;
+	margin:20px auto 0;
+	}
+.special-box .special-navigetion-box{
+	width: 1200px;
+	height: 30px;
+	padding: 0 0 5px 0;
+	background: white;
+	position: relative;
+}
+/*左边的温泉大促销*/
+.special-navigetion-box>h3{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+.special-navigetion-box>h3>strong{
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
+    font-family:"Microsoft YaHei";
+}
+/*中间点击事件UL*/
+.special-navigetion-box>ul{
+	position: absolute;
+	margin-left: 100px;
+	height: 30px;
+	left: 100px;
+}
+/*中间的点击事件ul里面的Li*/
+.special-navigetion-box>ul>li{
+	float: left;
+	margin-left: 50px;
+	font-size: 14px;
+	height: 33px;
+	line-height: 30px;
+	width: 73px;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+	font-family: "Microsoft Yahei";
+}
+/*右边的更多特卖a标签*/
+.special-navigetion-box>a{
+	display: inline-block;
+	float: right;
+	color: #bababa;
+	padding: 14px 0 0 0;
+	font-size: 14px;
+	padding-top: 12px;
+	line-height: 14px;
+}
+/*右边特卖的效果*/
+.special-navigetion-box i{
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	background: url("../images/精灵图1.png") no-repeat;
+	background-position: -100px -3px;
+}
+/*动画添加的*/
+/*导航栏下划线*/
+ .ltem {
+	border-bottom: 2px solid #1b9ecf;
+}
+ /*切换自后的字体颜色的改变*/
+.special-navigetion-box>ul>li.family-color{
+	 color: #1b9ecf;
+ }

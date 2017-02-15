@@ -1,0 +1,28 @@
+.nav-xia .nav-left {
+    width: 210px;
+    float: left;
+}
+.nav-xia .sort-items {
+    height: 465px;
+    width: 210px;
+    float: left;
+    background-color: #C81623;
+
+}
+
+.nav-xia .sort-items a{
+    display: block;
+    height: 31px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    line-height: 31px;
+    font-weight: 700;
+    color: #fff;
+}
+.nav-xia .sort-items a:hover {
+    background-color: gray;
+    padding: -1px;
+    border: 1px solid green;
+    height: 29px;
+}

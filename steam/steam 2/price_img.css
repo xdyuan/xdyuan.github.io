@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.price_img_box{
+    width: 1030px;
+    height: 206px;
+    /*background-color:aqua ;*/
+    position: relative;
+}
+
+.price_img_box h2{
+    color:#F7F8F8;
+    font-size:20px ;
+    float: left;
+}
+.price_img_bigBox{
+    width: 940px;
+    height: 206px;
+    background-color: #1D678C;
+    margin: auto;
+}
+.price_min{
+    width: 940px;
+    height: 22px;
+    /*background-color: #D2E885;*/
+    position: relative;
+}
+.price_img_minBox{
+    width: 940px;
+    height: 134px;
+    /*background-color: blueviolet;*/
+    position: relative;
+}
+.price_img_minBox .priceImg{
+    width: 227px;
+    height:106px;
+}
+.slider-ctrl{
+    width: 940px;
+    height:50px;
+    /*background-color: red;*/
+    margin: auto;
+    position: relative;
+}
+
+ /*设置图片*/
+ ul{
+    list-style: none;
+}
+
+.price_img_minBox li {
+    width: 226px;
+    height: 134px;
+    float: left;
+    margin-right: 8px;
+
+
+}
+.price_img_minBox .minI{
+    width: 940px;
+    height: 134px;
+    top:0;
+    position: absolute;
+
+}
+.price_img_minBox .minI ul {
+    height: 134px;
+    display: none;
+
+
+}
+.price_min .textRight {
+    width: 182px;
+    height: 28px;
+    background-color: #1D678C;
+    position: absolute;
+    right:0;
+
+}
+.textRight .boder-prc1 ,.boder-prc2{
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 27px;
+    color:#FFF8D9;
+
+
+}
+.textRight  .boder-prc1 {
+position: absolute;
+    width: 88px;
+    height: 22px;
+    border:1px solid #767E88;
+    display: block;
+
+}
+.textRight  .boder-prc2{
+    position: absolute;
+    width: 88px;
+    height: 27px;
+    right:0;
+    border:1px solid #767E88;
+    display: block;
+
+}
+
+
+ .btn-left{
+position: absolute;
+     top:0;
+ }
+
+.btn-left button{
+    width: 45px;
+    height: 106px;
+    margin-top: 35px;
+   background-color: #172230;
+    outline: none;
+    border:none;
+
+}
+.btn-left button .bt1{
+    width: 23px;
+    height: 36px;
+    color:#F7F8F8;
+    font-size: 40px;
+}
+.btn-left button:hover{
+    background-color:#445B6E;
+}
+
+.btn-right{
+    position: absolute;
+    right:0;
+    top:0;
+
+}
+.btn-right button{
+    width: 45px;
+    height: 106px;
+    margin-top: 35px;
+    background-color: #172230;
+    outline: none;
+    border:none;
+
+}
+.btn-right button .bt2{
+    width: 23px;
+    height: 36px;
+    color:#F7F8F8;
+    font-size: 40px;
+
+}
+.btn-right button:hover{
+    background-color: #445B6E;
+}
+
+
+ .slider-ctrl .ctrl1{
+     width: 15px;
+     height: 9px;
+     background-color: #48535F;
+     position: absolute;
+     margin-left: 445px;
+     margin-top: 20px;
+     border-radius: 2px;
+     background-image: url('images/icon-img.png');
+ }
+
+.slider-ctrl .ctrl2{
+    width: 15px;
+    height: 9px;
+    background-color: #48535F ;
+    position: absolute;
+    margin-left: 465px;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}

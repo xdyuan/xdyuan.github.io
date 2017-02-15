@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        欢迎来到 Steam
+    </title>
+    <link rel="icon" href="icon.icon.jpg">
+    <link rel="stylesheet" href="the_box.css">
+    <!--<link rel="stylesheet" href="zgl.css">-->
+    <link rel="stylesheet" href="zgl_top.css">
+    <link rel="stylesheet" href="the_box.css">
+    <link rel="stylesheet" href="zgl_the_center_of_content_right_nav.css">
+    <link rel="stylesheet" href="page_text.css">
+    <style>
+        *{margin:0;
+        padding:0;}
+        .the_biggest_box_body{
+            height:700px;
+        }
+    ul{
+    list-style: none;
+    }
+    /*轮播样式设置开始*/
+    .the-biggest{
+    width: 940px;;
+    height: 462px;
+    /*border:1px solid black;*/
+    margin:50px 0 60px 99px;
+    position: relative;
+    /*background-color: rgb(21,29,44);*/
+    }
+    .the-biggest .big_title {
+    width: 940px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: normal;
+        padding-top: 2px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    /*background-color: chartreuse;*/
+    }
+    .the-biggest .big_title span{
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff !important;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 20px;
+    display:block;
+    border-radius: 2px;
+    width: 48px;
+    height: 20px;
+    letter-spacing: normal;
+    float:right;
+    }
+    .the-biggest .big_title span:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    }
+    .the-biggest .big{
+    width: 940px;
+    height: 390px;
+    /*float:left;*/
+    overflow: hidden;
+    }
+    .the-biggest .big #page1 .left,
+    .the-biggest .big .page2 .left2{
+    width: 306px;
+    height: 390px;
+    margin-right: 10px;
+    float: left;
+    }
+    .the-biggest .big #page1 .center,
+    .the-biggest .big .page2 .center2{
+    width: 306px;
+    height: 404px;
+    margin-right: 10px;
+    float: left;
+    }
+    .big #page1 .center-pic1,.big #page1 .right-pic1,.big .page2 .center2-pic1,.big .page2 .right2-pic1,.big .page2 .left2-pic1{
+    width: 306px;
+    height: 186.52px;
+    margin-bottom: 15px;
+    float: left;
+    }
+    .big #page1 .center-pic2,.big #page1 .right-pic2,.big .page2 .center2-pic2,.big .page2 .left2-pic2,.big .page2 .right2-pic2{
+    width: 306px;
+    height: 186.52em;
+    float: left;
+    }
+    .the-biggest .big-bottom{
+    width: 940px;
+    height: 36px;
+    padding-bottom: 4px;
+    /*background-color: orange;*/
+    position: relative;
+    }
+    .the-biggest .big-bottom ul{
+    /*width: 60px;*/
+    height: 40px;
+    position: absolute;
+    left:50%;
+    margin-left: -21px;
+    top:12px;
+    }
+    .the-biggest .big-bottom ul li{
+    width: 15px;
+    height: 9px;
+    background-color: #555555;
+    margin-right: 4px;
+    float: left;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    }
+    .the-biggest .big-left,.the-biggest .big-right{
+    position:absolute;
+    width: 45px;
+    height: 108px;
+    /*margin-top: 148px;*/
+    text-align: center;
+    line-height: 108px;
+    font-size: 40px;
+    /*background:radial-gradient(grey,black);*/
+    color:white;
+    cursor: pointer;
+    top:50%;
+    margin-top: -54px;
+
+    }
+    .the-biggest .big-left{
+    left:-49px;
+
+    }
+    .the-biggest .big-right{
+    left: 945px;
+    }
+    .the-biggest .big-bottom ul .current{
+   background: hsla(202,60%,100%,0.4);
+    cursor: pointer;
+    }
+    .the-biggest .big-left {
+    background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+    }
+    .the-biggest .big-right{
+    background: linear-gradient(to right,rgb(57,70,85), rgb(17,32,47));
+    }
+    .the-biggest .big-right:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+    }
+    .the-biggest .big-left:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+    }
+
+    /*轮播补充*/
+    .aa{
+    width: 300px;
+    height: 250px;
+    background: rgb(189,204,218);
+    position:absolute;
+    display:none;
+    }
+    em{
+    width: 0;
+    height: 0;
+    position:absolute;
+    border:10px solid ;
+    border-color: transparent;
+    }
+    .a1{left:316px;top:31px}
+    .a2{left:316px;top:232px}
+    .a3,.a7{left:630px;top:31px;}
+
+
+    .a4,.a8{left:630px;top:232px}
+    .a5,.a9{left:324px;top:31px;}
+    .a6,.a10{left:324px;top:232px}
+    .b1,.b2,.b3,.b4,.b7,.b8{left: -20px;top: 31px;border-right-color: rgb(189,204,218);}
+    .b5,.b6,.b9,.b10{left:300px;top:31px;border-left-color: rgb(189,204,218);}
+
+
+    /*轮播样式设置结束*/
+
+    </style>
+    <link rel="stylesheet" href=browse_steam.css>
+    <style>
+        /*<!--steam鉴赏家-->*/
+        .steamViewBox{
+            /*background-color: rgb(27,40,56);*/
+            background-color: transparent;
+            width: auto;
+            height: 300px;
+            position: relative;
+            margin-top:200px;
+            right: 175px;
+        }
+        #SVB-title{
+            width: 990px;
+            height: 70px;
+            position: relative;
+            /*background-color: rgb(27,40,56);*/
+            background-color:transparent;
+            margin-left: 270px;
+        }
+        #SVB-middle{
+            width: 990px;
+            height: 188px;
+            position: relative;
+            margin-left: 270px;
+        }
+        #SVB-middle ul li{
+            width: 308px;
+            height: 90px;
+            float: left;
+            background: linear-gradient(to right,rgb(53,95,122),rgb(38,50,64));
+            margin-left: 5px;
+            margin-top: 5px;
+            position: relative;
+        }
+        .SVB-bigtitle{
+            width: 135px;
+            height: 20px;
+            text-align: left;
+            line-height: 20px;
+            color: white;
+            /*font-size: 17px;*/
+            float: left;
+            margin-top: 28px;
+
+        }
+        .SVB-bigtitle h2{
+            font-size:17px;
+            font-weight:normal;
+            left:4px;
+            position:absolute;
+            letter-spacing: 2px;
+
+        }
+        .SVB-describe{
+            width: 450px;
+            height: 20px;
+            color: rgb(187,212,223);
+            font-size: 15px;
+            float: left;
+            margin-top: 50px;
+            margin-left: -132px;
+        }
+        .ViewerIMG{
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+        .ViewerTitle{
+            width: 225px;
+            height: 20px;
+            float: left;
+            margin-top: 12px;
+            margin-left: 80px;
+            color: white;
+
+        }
+        .SVB-findmore{
+            width: 78px;
+            height: 20px;
+            border: 1px solid rgb(118,126,136);
+            position: absolute;
+            top: 35px;
+            right: 50px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 10px;
+        }
+        .Viewertext{
+            width: 212px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 15px;
+            color: rgb(171,218,244);
+            margin-left: 80px;
+        }
+        /*最大的导航栏和低于40*/
+        li{
+            list-style: none;
+        }
+        #bigbox{
+            position: relative;
+            width: 940px;
+            height: 850px;
+            left:77px;
+            /*background-color:transparent;*/
+            top:40px;
+        }
+        #button{
+            list-style: none;
+            position: absolute;
+            left:200px;
+            width: 330px;
+            height: 35px;
+            margin-top: 4px;
+            /*margin-left: 5px;*/
+
+        }
+        #bigbox .wallbox{
+            position: absolute;
+            top: 35px;
+            left: 200px;
+            width: 947px;
+            height: 805px;
+            overflow: hidden;
+            list-style: none;
+            background-color: #2a475e;
+              /*background-color:transparent;*/
+
+        }
+        #button li{
+            display: inline-block;
+            width: 80px;
+            height: 23px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            color: rgb(79,148,188);
+            font-size: 13px;
+            /*padding-top: 2px;*/
+        }
+        #bigbox .wallbox li{
+            position: relative;
+
+        }
+        .wallbox li div{
+            width: 622px;
+            height: 600px;
+            background-color: #2a475e;
+
+        }
+        #button .currentF{
+            background-color: #2a475e;
+            height: 36px;
+            border-bottom: none;
+            color: #F7F7F7;
+        }
+        #bigbox .currentF1{
+            background-color: #9dc3d9;
+            width: 670px;
+            border-color: #9dc3d9;
+        }
+        #bigbox li .price{
+            color: rgb(172,219,245);
+        }
+        #bigbox .currentF1 .price {
+            color: black;
+        }
+        #box1 li,#box2 li,#box3 li,#box4 li{
+            width: 620px;
+            height: 68px;
+            border: 1px solid #223848;
+            margin-top: 5px;
+            float: left;
+            background-color: #223848;
+        }
+        #pit{
+            width: 308px;
+            height: 745px;
+            position: absolute;
+            left: 837px;
+            margin-top: 40px;
+            background-color: #9dc3d9;
+            background-repeat: no-repeat;
+
+        }
+        #bigbox .insideBox{
+            width:184px;
+            height: 68px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top: none;
+            position: absolute;
+            background-color: #cccccc;
+        }
+        #bottom{
+            width: 622px;
+            height: 40px;
+            /*margin-bottom: 150px;*/
+            background-color: #223848;
+            position: absolute;
+            top:800px;
+            left: 200px;
+        }
+        #bottom div{
+            display: inline-block;
+            width: 75px;
+            height: 26px;
+            border: 1px solid grey;
+            color: white;
+            text-align: center;
+            line-height: 26px;
+            font-size: x-small;
+            /*border-radius: 45px 45px 45px 45px;*/
+        }
+        #bottom #bb1_button1{
+            position: absolute;
+            left: 426px;
+            top: 7px;
+
+        }
+        #bottom #bb1_button2{
+            position: absolute;
+            left: 536px;
+            top: 7px;
+        }
+        #bigbox p, .price_img_box p{
+            color: white;
+            text-align: center;
+            display: inline-block;
+            width: 90px;
+            height: 20px;
+            line-height: 20px;
+            font-size: x-small;
+        }
+        #bottom #bb1_text1{
+            position: absolute;
+            top: 11px;
+            left: 357px;
+        }
+        #bottom #bb1_text2{
+            position: absolute;
+            top: 11px;
+            left: 484px;
+        }
+        #bottom #bb2_button1{
+            position: absolute;
+            top: 7px;
+            left: 400px;
+        }
+        #bottom #bb2_button2{
+            position: absolute;
+            top: 7px;
+            left: 518px;
+            width: 90px;
+        }
+        #bottom #bb2_text1{
+            position: absolute;
+            top: 11px;
+            left: 326px;
+        }
+        #bottom #bb2_text2{
+            position: absolute;
+            top: 11px;
+            left: 462px;
+        }
+        #bottom #bb3_button1{
+            position: absolute;
+            top: 11px;
+            left: 530px;
+        }
+        #bottom #bb3_text1{
+            position: absolute;
+            top: 15px;
+            left: 450px;
+        }
+        #bottom #bb4_button1{
+            position: absolute;
+            top: 11px;
+            left: 530px;
+        }
+        #bottom #bb4_text1{
+            position: absolute;
+            top: 15px;
+            left: 450px;
+        }
+        #bigbox .title{
+            width: 370px;
+            height: 20px;
+            position: absolute;
+            left: 200px;
+            top: 6px;
+            line-height: 20px;
+            text-align: left;
+            font-size: small;
+            color: #F7F7F7;
+        }
+        #bigbox .describe{
+            width: 230px;
+            height: 15px;
+            position: absolute;
+            left: 200px;
+            top: 45px;
+            line-height: 15px;
+            text-align: left;
+            font-size: 5px;
+            color: rgb(53,73,89);
+        }
+        #bigbox .price{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 565px;
+            top: 24px;
+            text-align: center;
+            line-height: 30px;
+            font-size: small;
+            color: rgb(172,219,245);
+        }
+        #bigbox .oldprice{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 570px;
+            top: 18px;
+            text-align: center;
+            line-height: 10px;
+            font-size: xx-small;
+            text-decoration: line-through;
+            color: rgb(113,147,166);
+        }
+        #bigbox .offbox{
+            width: 39px;
+            height: 18px;
+            position: absolute;
+            left:480px;
+            top: 18px;
+        }
+        #bigbox .currentF1 .title{
+            color: black;
+        }
+        /*间隔*/
+        .price_img_box{
+            width: 940px;
+            height: 320px;
+            padding-left: 33px;
+            padding-top: 27px;
+            /*background-color:rgb(27,40,56);*/
+            position: relative;
+            left:259px;
+            background: transparent;
+            top:60px;
+            
+        }
+
+        .price_img_box p{
+            color:#F7F8F8;
+            font-size:17px ;
+            float: left;
+            font-weight:normal;
+        }
+        .price_img_bigBox{
+            width: 940px;
+            height: 350px;
+            /*margin: auto;*/
+            left:100px;
+            overflow:hidden;
+        }
+        .price_min{
+            width: 940px;
+            height: 22px;
+            position: relative;
+
+        }
+        .price_img_box  .price_img_bigBox .price_min h2{
+            font-size: 17px;
+            color:white;
+            font-weight: normal;
+            letter-spacing: 2px;
+
+        }
+
+        .price_img_minBox{
+            width: 940px;
+            height: 134px;
+            position: relative;
+            margin-top: 10px;
+            left:-14px;
+
+
+        }
+        .price_img_minBox .priceImg{
+            width: 227px;
+            height:134px;
+        }
+        .slider-ctrl{
+            width: 940px;
+            height:50px;
+            margin: auto;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .price_img_minBox .priceImg{
+            float: left;
+            margin-right: 8px;
+            overflow: hidden;
+        }
+        .price_img_minBox .minI{
+            width: 940px;
+            height: 134px;
+            top:0;
+            position: absolute;
+            left: 16px;
+
+        }
+        .price_img_minBox .minI ul {
+            height: 134px;
+            display: none;
+        }
+        .price_min .textRight {
+            width: 182px;
+            height: 28px;
+            position: absolute;
+            right:0;
+            margin-top: -14px;
+            margin-right: 17px;
+        }
+        .price_img_box  .price_img_bigBox .price_min .textRight  p{
+            font-size:12px;
+            font-weight:normal;
+        }
+        .textRight .boder-prc1 ,.boder-prc2{
+            font-size: 12px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 27px;
+            color:#FFF8D9;
+        }
+        .textRight  .boder-prc1 {
+            position: absolute;
+            width: 88px;
+            height: 22px;
+            border:1px solid #767E88;
+            display: block;
+        }
+        .textRight  .boder-prc2{
+            position: absolute;
+            width: 88px;
+            height: 22px;
+            right:0;
+            border:1px solid #767E88;
+            display: block;
+        }
+        #btn-left{
+            position: absolute;
+            top: 38px;
+            left: -10px;
+        }
+
+        #btn-left div{
+            width: 45px;
+            height: 108px;
+            margin-top: 35px;
+            background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+            outline: none;
+            border:none;
+            line-height: 108px;
+            text-align: center;
+
+        }
+        #btn-left div .bt1{
+            width: 23px;
+            height: 36px;
+            color:#F7F8F8;
+            font-size: 40px;
+        }
+        #btn-left div:hover{
+          background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+        border-left:none;
+        }
+
+        #btn-right{
+            position: absolute;
+            right:-40px;
+            top:39px;
+        }
+        #btn-right  div{
+            width: 45px;
+            height: 108px;
+            margin-top: 35px;
+            background: linear-gradient(to right, rgb(17,32,47),rgb(57,70,85));
+            outline: none;
+            border:none;
+            line-height: 108px;
+            text-align: center;
+
+        }
+        #btn-right  div .bt2{
+            width: 23px;
+            height: 36px;
+            color:#F7F8F8;
+            font-size: 40px;
+        }
+        #btn-right div:hover{
+            background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);
+            border-left: none;
+        }
+        .slider-ctrl .ctrl1{
+            width: 15px;
+            height: 9px;
+            background-color: rgb(72,83,95);
+            position: absolute;
+            z-index: 0;
+            margin-left: 445px;
+            margin-top: 20px;
+            border-radius: 2px;
+            background-image: url('images/icon-img.png');
+        }
+        .price_img_minBox .hideBox-min{
+            position: absolute;
+            z-index: 1;
+            left: 226px;
+            overflow: hidden;
+            display: inline-block;
+
+        }
+        .slider-ctrl .ctrl2{
+            width: 15px;
+            height: 9px;
+            background-color: #48535F ;
+            position: absolute;
+            margin-left: 465px;
+            margin-top: 20px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        #pt4,#pt8{
+            left: 390px;
+        }
+        #pt3,#pt7{
+            left: 678px;
+        }
+        #pt2,#pt6{
+            left: 452px;
+        }
+        #anliuqing{
+            width:100%;
+            height:360px;
+            /*background-color:yellow;*/
+            background-color: rgb(21,29,44);
+            float: right;
+            position:relative;
+            top:1200px;
+        }
+        /*底部样式*/
+
+
+        /*底部样式设置开始*/
+        #anliuqing body{
+            background-color: rgb(21,29,44);
+        }
+        .w{
+            width: 1190px;
+            margin:0 auto;
+        }
+        #anliuqing a{
+            text-decoration: none;
+        }
+        .z{
+            width: 940px;
+            margin-left: 232px;
+        }
+        .footer_1{
+            /*margin-top: 10px;*/
+            width: 100%;
+            height: 209px;
+            background-color: rgb(0,0,0) ;
+            overflow: hidden;
+        }
+        .footer_1 .footer_title{
+            width: 940px;
+            height: 29px;
+            background-image: url(../images/01.png);
+            background-repeat: repeat-x;
+            /*margin-left: 240px;*/
+            margin-top: 18px;
+
+        }
+        .footer_1 .footer_title span{
+            width: 188px;
+            height: 29px;
+            color: #67c1f5;
+            font-size: 24px;
+            margin:0 auto;
+            display:block;
+            background-color: rgb(0,0,0);
+            text-align: center;
+        }
+        .footer_1 .footer_main{
+            width: 940px;
+            height: 162px;
+            /*margin-left: 240px;*/
+            padding: 12px 12px 4px;
+        }
+        .footer_1 .footer_main p{
+            text-align: center;
+            color: #8f98a0;
+            font-size: 15px;
+        }
+        .footer_1 .footer_main span{
+            margin: 0 auto;
+            width: 60px;
+            height: 30px;
+            background-color: #536904;
+            display:block;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .footer_1 .footer_main span a{
+            color:#D2E885 !important;
+            font-size: 15px;
+        }
+        .footer_1 .footer_main span:hover{
+            background-color: #799905;
+        }
+        .footer_1 .footer_main a{
+            color: #ffffff;
+        }
+        .footer_1 .footer_main a:hover{
+            color: #67c1f5;
+            cursor: pointer;
+        }
+        .footer_2{
+            width: 100%;
+            height: 67px;
+            margin-bottom: 0;
+            background-color: rgb(21,29,44);
+            padding:37px 0 35px 0;
+        }
+        .footer_2_bottom{
+            color: #8f98a0;
+            font-size: 14px;
+        }
+        #anliuqing .logo #logo-box{
+            width: 940px;
+            height: 30px;
+            /*background-color: yellow;*/
+            position:relative;
+        }
+        .logo .logo_1{
+            margin-right: 100px;
+        }
+        #anliuqing .logo span a,#anliuqing .logo span.intr{
+            float: left;
+            margin-left: 10px;
+            height: 28px;
+            position: absolute;
+        }
+        .logo .rule{
+            height: 18px;
+        }
+        .logo span.intr p{
+            font-size: 12px;
+            line-height: 14px;
+        }
+        #anliuqing .logo span.intr p span{
+            color:#cccccc;
+            cursor: pointer;
+        }
+        .logo .valve_links{
+            margin-left: 10px;
+            width: 650px;
+            height: 16px;
+        }
+        #anliuqing .logo .valve_links a{
+            font-size: 13px;
+            color: #cccccc;
+        }
+        #anliuqing .logo .valve_links a:hover{
+            color:white;
+        }
+        .search_input{
+        	font-style: italic;
+        }
+        /*底部样式设置结束*/
+        /*底部样式设置结束*/
+    </style>
+    <link rel="stylesheet" href="anliuqing.css">
+</head>
+<body>
+<div class="the_biggest_box_body">
+<div class="the_top_of_header">
+    <div class="resige">
+        <div class="load"><a href="#"></a></div>
+        <div class="login">
+            <div class="denglu"><a href="#">登录</a></div>
+            <div class="zhuce"><a href="#">注册</a></div>
+        </div>
+    </div>
+    <div class="topBox">
+        <div class="logo">
+            <a href="#"><img src="欢迎来到%20Steam_files/globalheader_logo.png" alt=""></a>
+        </div>
+        <div class="topNav">
+            <ul class="top_ul">
+                <li>
+                    <a href="#">商店</a>
+                    <ul class="top_nav_ul1">
+                        <li><a href="#">精选</a></li>
+                        <li><a href="#">探索</a></li>
+                        <li><a href="#">鉴赏家</a></li>
+                        <li><a href="#">愿望单</a></li>
+                        <!--<li><a href="#">新闻</a></li>-->
+                        <!--<li><a href="#">统计</a></li>-->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">社区</a>
+                    <ul class="top_nav_ul2">
+                        <li><a href="#">主页</a></li>
+                        <li><a href="#">讨论</a></li>
+                        <li><a href="#">创意工坊</a></li>
+                        <!--<li><a href="#">青睐之光</a></li>-->
+                        <!--<li><a href="#">市场</a></li>-->
+                        <li><a href="#">实况直播</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">客服</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="box_center_color">
+
+
+    <!--中间最大的盒子-->
+    <div class="the_center_of_content">
+        <!--左边栏-->
+        <div class="the_center_of_content_left_nav">
+            <!--文本文字内容-->
+            <div class="page_box">
+                <!--第一部分-->
+                <div class="page_box_mark">
+                    <!--推荐-->
+                    <div class="mark_head">推荐</div>
+
+                    <div class="mark_block" >
+                        <ul class="text_mark">
+                            <li> <a href="#"><span class="icon_friends" style="background-position: 0px 0px;"></span>由好友推荐</a></li>
+                            <li><a href="#"><span class="icon_tags" style="background-position: -16px 0px;"></span>由鉴赏家推荐</a></li>
+                            <li><a href="#"><span class="icon_label" style="background-position: -32px 0px;"></span>标签</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mark_head" >探索列队</div>
+                    <div class="mark_block"  >
+                        <ul class="text_mark">
+                            <li> <a href=""><span class="icon_test" style="background-position: -48px 0px;"></span>推荐</a></li>
+                            <li><a href=""><span class="icon_new" style="background-position: -64px 0px;"></span>新品</a></li>
+                        </ul>
+                    </div>
+                    <div class="mark_head" >浏览类型</div>
+                    <div class="mark_block"  >
+                        <ul class="text_mark">
+                            <li> <a href=""><span class="icon_hot" style="background-position: -80px 0px;"></span>热销商品</a></li>
+                            <li><a href=""><span class="icon_near" style="background-position: -96px 0px;"></span>最近更新</a></li>
+                            <li><a href=""><span class="icon_new2" style="background-position: -112px 0px;"></span>新品</a></li>
+                            <li><a href=""><span class="icon_soon" style="background-position: -128px 0px;"></span>即将推出</a></li>
+                            <li><a href=""><span class="icon_pre" style="background-position: -144px 0px;"></span>优惠</a></li>
+                            <li><a href=""><span class="icon_vir" style="background-position: -160px 0px;"></span>虚拟现实</a></li>
+                            <li><a href=""><span class="icon_con" style="background-position: -176px 0px;"></span>Steam 控制器</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--第二部分-->
+                <div class="page_box_mark" id="page_browse">
+
+                    <div class="mark_head" >按类型浏览</div>
+
+                    <div class="mark_block">
+                        <ul class="text_mark"  >
+                            <li><a href="">免费</a></li>
+                            <li><a href="">抢先体验</a></li>
+                            <li><a href="">休闲</a></li>
+                            <li><a href="">体育</a></li>
+                            <li><a href="">冒险</a></li>
+                            <li><a href="">动作</a></li>
+                            <li><a href="">大型多人在线</a></li>
+                            <li><a href="">模拟</a></li>
+                            <li><a href="">独立</a></li>
+                            <li><a href="">竞技</a></li>
+                            <li><a href="">策略</a></li>
+                            <li><a href="">角色扮演</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="the_center_of_content_right">
+            <div class="the_center_of_content_in">
+                <!--右边的第一个导航栏-->
+                <div class="the_center_of_content_right_nav">
+                    <div class="the_center_of_content_right_nav_ul">
+                        <ul>
+                            <li class="zgl_li1">
+                                <a class="a_item_nav zgl_name0" href="#" data-toggle="dropdown">你的商店
+                                    <ul class="ul_item">
+                                        <li class="li_item"><a class="a_item" href="#">商店主页</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">最近查看</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">Steam鉴赏家</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">最近更新</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="zgl_li2">
+                                <a class="a_item_nav zgl_name1" href="#">商店
+                                    <ul class="ul_item">
+                                        <li class="li_item"><a class="a_item" href="#">免费</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">抢先体验</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">休闲</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">射击</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="zgl_li2">
+                                <a class="a_item_nav zgl_name1" href="#">软件</a>
+                                <ul class="ul_item">
+                                    <li class="li_item"><a class="a_item" href="#">实用工具</a></li>
+                                    <li class="li_item"><a class="a_item" href="#">游戏开发</a></li>
+                                    <li class="li_item"><a class="a_item" href="#">网络出版</a></li>
+                                    <li class="li_item"><a class="a_item" href="#">视频制作</a></li>
+                                </ul>
+                            </li>
+                            <li class="zgl_li2">
+                                <a class="a_item_nav zgl_name1" href="#">硬件
+                                    <ul class="ul_item">
+                                        <li class="li_item"><a class="a_item" href="#">Steam控制器</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">Steam流式盒</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">Steam主机</a></li>
+                                        <li class="li_item"><a class="a_item" href="#">MLGB</a></li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="zgl_li3">
+                                <a class="a_item_nav zgl_name2" href="#">视频</a>
+                            </li>
+                            <li class="zgl_li3">
+                                <a class="a_item_nav zgl_name2" href="#">新闻</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="the_center_of_content_right_nav_search">
+                        <input type="text" class="search_input" placeholder="&nbsp;&nbsp;搜索商店">
+                        <a class="zgl_search" href="#"></a>
+                    </div>
+                </div>
+                <!--右边的steam-shopping-->
+                <div class="the_center_of_content_right_shopping_nav">
+                    <a href="#" class="img_bgc_a">
+                    </a>
+                </div>
+                <h2 style="color: white;font-size: 17px;font-weight:normal;letter-spacing:2px;">精选和推荐</h2>
+                <!--精选和推荐的大盒子-->
+                <div class="the_center_of_content_right_choice_box">
+                    <!--左边选择器-->
+                    <div class="the_center_of_content_right_choice_left">
+                        <
+                    </div>
+                    <!--中间图片主体盒子-->
+                    <div class="the_center_of_content_right_choice_content_box">
+                        <ul class="box_ul">
+                            <li class="box_li">
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left">
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big1-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big1-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big1-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big1-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big1-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left">
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big2-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big2-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big2-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big2-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big2-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big3-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big3-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big3-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big3-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big3-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big4-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big4-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big4-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big4-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big4-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big5-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big5-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big5-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big5-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big5-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big6-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big6-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big6-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big6-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big6-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big7-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big7-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big7-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big7-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big7-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big8-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big8-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big8-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big8-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big8-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big9-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big9-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big9-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big9-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big9-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big10-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big10-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big10-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big10-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big10-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big11-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big11-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big11-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big11-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big11-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div class="the_center_of_content_right_choice_content_box">
+                                    <!--中间主体盒子的左边-->
+                                    <div class="the_center_of_content_right_choice_content_box_left" >
+                                        <img class="big_img" src="欢迎来到%20Steam_files/1/img-big12-small5.jpg" alt="">
+                                    </div>
+                                    <!--中间主体盒子的右边大盒子-->
+                                    <div class="the_center_of_content_right_choice_content_box_right">
+                                        <!--中间主体盒子右边的上部-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_up"><p><string>Sid Meier's Civilization VI</string></p></div>
+                                        <!--中间主体盒子的右边right  四张小图片的大盒子-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_center">
+                                            <div class="the_center_of_content_right_choice_content_box_right_center1">
+                                                <img src="欢迎来到%20Steam_files/1/img-big12-small4.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center2">
+                                                <img src="欢迎来到%20Steam_files/1/img-big12-small3.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center3">
+                                                <img src="欢迎来到%20Steam_files/1/img-big12-small2.jpg" alt="">
+                                            </div>
+                                            <div class="the_center_of_content_right_choice_content_box_right_center4">
+                                                <img src="欢迎来到%20Steam_files/1/img-big12-small1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!--中间主体盒子的左边的下部信息-->
+                                        <div class="the_center_of_content_right_choice_content_box_right_down">
+                                            <div class="zgl1"><p><strong>现已推出抢先体验</strong></p></div>
+                                            <div class="zgl2"><p><string>免费</string></p></div>
+                                            <div class="zgl3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--右边选择器-->
+                    <div class="the_center_of_content_right_choice_right"> ></div>
+                    <!--下方选择器-->
+                    <div class="the_center_of_content_right_choice_bottom">
+                        <ul class="botton_ul">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--特别优惠开始-->
+            <!--轮播大框架-->
+            <div class="w">
+                <!--<div class="z">-->
+                <div class="the-biggest">
+                    <h2 class="big_title"> 特别优惠 <span>浏览所有</span></h2>
+                    <!--左滑动箭头-->
+                    <div class="big-left">
+                        <span> < </span>
+                    </div>
+                    <!--轮播右箭头-->
+                    <div class="big-right">
+                        <span> > </span>
+                    </div>
+                    <!--轮播主体部分-->
+                    <div class="big">
+                        <!--第一张游戏页面展示-->
+                        <div id="page1">
+                            <div class="left">
+                                <img src="left-big.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="center-pic1">
+                                    <img src="1.png" alt="">
+                                </div>
+                                <div class="center-pic2">
+                                    <img src="2.jpg" alt="">
+                                </div>
+                                <div class="aa a7"><img src="images/001.png" alt=""> <em class="b7"></em></div>
+                                <div class="aa a8"><img src="images/002.png" alt=""><em class="b8"></em></div>
+                            </div>
+                            <div class="right">
+                                <div class="right-pic1">
+                                    <img src="3.jpg" alt="">
+                                </div>
+                                <div class="right-pic2">
+                                    <img src="4.jpg" alt="">
+                                </div>
+                                <div class="aa a9"><img src="images/003.png" alt=""> <em class="b9"></em></div>
+                                <div class="aa a10"><img src="images/003.png" alt=""><em class="b10"></em></div>
+                            </div>
+                        </div>
+                        <!--第二张游戏页面展示-->
+                        <div class="page2">
+                            <div class="left2">
+                                <div class="left2-pic1">
+                                    <img src="06.png" alt="">
+                                </div>
+                                <div class="left2-pic2">
+                                    <img src="07.png" alt="">
+                                </div>
+                                <div class="aa a1"><img src="images/002.png" alt=""> <em class="b1"></em></div>
+                                <div class="aa a2"><img src="images/003.png" alt=""><em class="b2"></em></div>
+                            </div>
+                            <div class="center2">
+                                <div class="center2-pic1">
+                                    <img src="1.png" alt="">
+                                </div>
+                                <div class="center2-pic2">
+                                    <img src="2.jpg" alt="">
+                                </div>
+                                <div class="aa a3"><img src="images/001.png" alt=""> <em class="b3"></em></div>
+                                <div class="aa a4"><img src="images/002.png" alt=""><em class="b4"></em></div>
+                            </div>
+                            <div class="right2">
+                                <div class="right2-pic1">
+                                    <img src="09.png" alt="">
+                                </div>
+                                <div class="right2-pic2">
+                                    <img src="11.png" alt="">
+                                </div>
+                                <div class="aa a5"><img src="images/003.png" alt=""> <em class="b5"></em></div>
+                                <div class="aa a6"><img src="images/003.png" alt=""><em class="b6"></em></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--底部滑动部分-->
+                    <div class="big-bottom">
+                        <ul>
+                            <li class="current"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+            <!-- 浏览steam -->
+                <div class="xfx_steam_box">
+                    <!--浏览steam-->
+                    <h2>浏览 STEAM</h2>
+                    <div class="xfx_button_steam_box">
+                        <div class="xfx_button_steam_left">
+                            <a href="#" class="xfx_big_button">新品</a>
+                        </div>
+                        <div class="xfx_button_steam_left_mid">
+                            <a href="#" class="xfx_big_button">优惠</a>
+                        </div>
+                        <div class="xfx_button_steam_middle">
+                            <a href="#" class="xfx_big_button">免费游戏</a>
+                        </div>
+                        <div class="xfx_button_steam_right">
+                            <a href="#" class="xfx_big_button">按用户标签</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- 鉴赏家 -->
+                <div class="steamViewBox">
+                    <div id="SVB-title">
+                        <div class="SVB-bigtitle"><h2>STEAM 鉴赏家</h2></div>
+                        <div class="SVB-describe">通过 Steam 鉴赏家探索新游戏。关注鉴赏家并查看其推荐的游戏。</div>
+                        <div class="SVB-findmore">查找更多</div>
+                    </div>
+                    <div id="SVB-middle">
+                        <ul>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</div>
+                                <div class="Viewertext"><i>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</i></div>
+                            </li>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">中国玩家鉴赏组</div>
+                                <div class="Viewertext"><i>“关注中国玩家鉴赏组，能为你实时推荐自你关注以来大部分大作品的游戏测评，也希望各位拥有大量游戏的</i></div>
+                            </li>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">散人games</div>
+                                <div class="Viewertext"><i>散人games</i></div>
+                            </li>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">游戏特工组</div>
+                                <div class="Viewertext"><i>欢迎大家关注我们，我们会努力做出更好的游戏评测。感谢大家的订阅~</i></div>
+                            </li>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">百度显卡吧官方组</div>
+                                <div class="Viewertext"><i>百度显卡吧官方组，华语Steam游戏评测。关注游戏性，关注优化，关注好游戏。</i></div>
+                            </li>
+                            <li>
+                                <div class="ViewerIMG"></div>
+                                <div class="ViewerTitle">国人交流组【天朝】</div>
+                                <div class="Viewertext"><i>这些游戏值得一玩</i></div>
+                            </li>
+                        </ul>
+                    </div>
+
+            <!--下方最大的导航栏-->
+                    <div id="bigbox">
+                        <ul class="wallbox">
+                            <li>
+                                <div id="box1">
+                                    <ul>
+                                        <li class="currentF1">
+                                            <div class="insideBox"></div>
+                                            <p class="title">Zup! 2</p>
+                                            <p class="describe">独立 休闲 解谜 单人</p>
+                                            <p class="offbox" style="background-image: url('17off.png')"></p>
+                                            <p class="oldprice">￥6</p>
+                                            <p class="price">￥5</p>
+                                        </li>
+                                        <li>
+                                            <div class="insideBox"></div>
+                                            <p class="title">Euro Truck Simulator 2 - Vive la France!</p>
+                                            <p class="describe">模拟 独立 驾驶 开放世界</p>
+                                            <p class="price">￥95</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Steep</p>
+                                            <p class="describe">体育 开放世界 动作 多人 氛围</p>
+                                            <p class="price">￥248</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Townsmen</p>
+                                            <p class="describe">策略 模拟 休闲 城市建造</p>
+                                            <p class="offbox" style="background-image: url('18off.png')"></p>
+                                            <p class="oldprice">￥40</p>
+                                            <p class="price">￥33</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Tom Clancy`s Rainbow Six@ Siege - Year 2 Pass</p>
+                                            <p class="describe">动作 第一人称射击</p>
+                                            <p class="price">￥128</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Radiation Island</p>
+                                            <p class="describe">动作 冒险 独立 生存</p>
+                                            <p class="price">￥15</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Watch_Dogs@ 2</p>
+                                            <p class="describe">光明会 黑客 开放世界 动作 跑酷</p>
+                                            <p class="price">￥248</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Marmoset Toolbag 3</p>
+                                            <p class="describe">动画制作与建模 设计&插画 实用工具</p>
+                                            <p class="price">￥470</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">PRO EVOLUTION SOCCER 2017</p>
+                                            <p class="describe">体育 免费 足球/美式足球</p>
+                                            <p class="price">免费</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Bullshot</p>
+                                            <p class="describe">独立 动作 怀旧 平台 太空</p>
+                                            <p class="price">￥21</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="box2">
+                                    <ul>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Watch_Dogs@ 2</p>
+                                            <p class="describe">光明会 黑客 开放 动作</p>
+                                            <p class="price">￥248</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Grand Theft Auto V</p>
+                                            <p class="describe">开放世界 动作 多人 第一人称视角</p>
+                                            <p class="price">￥189</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Counter-Strike: Global Offensive</p>
+                                            <p class="describe">第一人称射击 多人 射击 动作</p>
+                                            <p class="price">￥48</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Planet Coaster</p>
+                                            <p class="describe">模拟 建造 管理 沙盒</p>
+                                            <p class="price">￥287</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Euro Truck Simulator 2 - Vive la France!</p>
+                                            <p class="describe">模拟独立 驾驶 开放世界</p>
+                                            <p class="price">￥95</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Space Hulk: Deathwing</p>
+                                            <p class="describe">战锤40K 动作 在线合作 第一人称射击</p>
+                                            <p class="offbox" style="background-image: url('15off.png')"></p>
+                                            <p class="oldprice">￥170</p>
+                                            <p class="price">￥144</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Tom Clancy`s Rainbow Six@ Siege - Year 2 Pass</p>
+                                            <p class="describe">动作 第一人称射击</p>
+                                            <p class="price">￥128</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Steep</p>
+                                            <p class="describe">体育 开放世界 动作 多人</p>
+                                            <p class="price">￥248</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">ICEY</p>
+                                            <p class="describe">动作 独立 冒险 角色扮演</p>
+                                            <p class="price">￥38</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">RimWorld</p>
+                                            <p class="describe">Early Access 生存 建筑建造 策略</p>
+                                            <p class="price">￥88</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="box3">
+                                    <ul>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Patchwork</p>
+                                            <p class="describe">策略 独立 休闲</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Pinball FX2 Betesda@ Pinball</p>
+                                            <p class="describe">休闲 模拟</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Shadow Tactics: Blades of the Shogun</p>
+                                            <p class="describe">潜行 忍着 战术 策略</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Ascension VR - War of Shadows</p>
+                                            <p class="describe">策略 独立</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Sacred Line Genesis Remix - Definitive Soun...</p>
+                                            <p class="describe">冒险 独立 休闲 血腥</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Drop Alive - Deluxe Edition</p>
+                                            <p class="describe">独立 休闲</p>
+                                            <p class="price"></p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Drop Alive</p>
+                                            <p class="describe">免费 独立 休闲</p>
+                                            <p class="price">免费</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Arizona Sunshine</p>
+                                            <p class="describe">独立 丧尸 动作 冒险</p>
+                                            <p class="offbox" style="background-image: url('15off.png')"></p>
+                                            <p class="oldprice">￥112</p>
+                                            <p class="price">￥95</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">South Park:The Fractured but Whole</p>
+                                            <p class="describe">角色扮演 欢乐 搞笑 黑色幽默</p>
+                                            <p class="price">248</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Sea Dogs: To Each His Own - Flying the Joll...</p>
+                                            <p class="describe">角色扮演</p>
+                                            <p class="price"></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="box4">
+                                    <ul>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Miscreated</p>
+                                            <p class="describe">Early Access 生存 开放世界 丧尸</p>
+                                            <p class="offbox" style="background-image: url('50off.png')"></p>
+                                            <p class="oldprice">￥68</p>
+                                            <p class="price">￥34</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">CPUCores::Maximize Your FPS</p>
+                                            <p class="describe">应用工具 第一人称射击</p>
+                                            <p class="offbox" style="background-image: url('51off.png')"></p>
+                                            <p class="oldprice">￥123</p>
+                                            <p class="price">￥60</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Block`hood</p>
+                                            <p class="describe">Early Access 城市建造 模拟 独立</p>
+                                            <p class="offbox" style="background-image: url('42off.png')"></p>
+                                            <p class="oldprice">￥36</p>
+                                            <p class="price">￥21</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Robot Roller-Derby Disco Dodgeball</p>
+                                            <p class="describe">多人 独立 好评原声音乐 第一人称射击</p>
+                                            <p class="offbox" style="background-image: url('81off.png')"></p>
+                                            <p class="oldprice">￥36</p>
+                                            <p class="price">￥7</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Book of Demons</p>
+                                            <p class="describe">Early Access 迷宫探索 砍杀 动作角色扮演</p>
+                                            <p class="offbox" style="background-image: url('31off.png')"></p>
+                                            <p class="oldprice">￥68</p>
+                                            <p class="price">￥47</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">8-Bit Armles</p>
+                                            <p class="describe">策略 即时战略 独立 模拟</p>
+                                            <p class="offbox" style="background-image: url('50off.png')"></p>
+                                            <p class="oldprice">￥48</p>
+                                            <p class="price">￥24</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Long Live The Queen</p>
+                                            <p class="describe">日本动画 视觉小说 女主人翁 独立</p>
+                                            <p class="offbox" style="background-image: url('47off.png')"></p>
+                                            <p class="oldprice">￥36</p>
+                                            <p class="price">￥19</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">EARTHLOCK: Festival of Magic</p>
+                                            <p class="describe">冒险 角色扮演 独立 奇幻</p>
+                                            <p class="offbox" style="background-image: url('34off.png')"></p>
+                                            <p class="oldprice">￥88</p>
+                                            <p class="price">￥58</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Valley</p>
+                                            <p class="describe">冒险 独立 动作 第一人称视角</p>
+                                            <p class="offbox" style="background-image: url('31off.png')"></p>
+                                            <p class="oldprice">￥68</p>
+                                            <p class="price">￥47</p>
+                                        </li>
+                                        <li><div class="insideBox"></div>
+                                            <p class="title">Prototype</p>
+                                            <p class="describe">动作 开放世界 冒险 第三人称视角</p>
+                                            <p class="offbox" style="background-image: url('75off.png')"></p>
+                                            <p class="oldprice">￥68</p>
+                                            <p class="price">￥17</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="pit">
+
+                        </div>
+                        <ol id="button">
+                            <li class="currentF">热门新品</li>
+                            <li>热销商品</li>
+                            <li>即将推出</li>
+                            <li>优惠</li>
+                        </ol>
+                        <div id="bottom">
+                            <ul>
+                                <li>
+                                    <p id="bb1_text1">查看更多:</p>
+                                    <div id="bb1_button1">热门新品</div>
+                                    <p id="bb1_text2">或</p>
+                                    <div id="bb1_button2">所有新品</div>
+                                </li>
+                                <li>
+                                    <p id="bb2_text1">查看更多:</p>
+                                    <div id="bb2_button1">热销商品</div>
+                                    <p id="bb2_text2">或</p>
+                                    <div id="bb2_button2">全球热销商品</div>
+                                </li>
+                                <li>
+                                    <p id="bb3_text1">查看更多:</p>
+                                    <div id="bb3_button1">即将推出</div>
+                                </li>
+                                <li>
+                                    <p id="bb4_text1">查看更多:</p>
+                                    <div id="bb4_button1">优惠</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--低于40的价格大盒子-->
+                    <div class="price_img_box">
+                        <!--中间盒子-->
+                        <div class="price_img_bigBox" >
+                            <!--价格盒子-->
+                            <div class="price_min">
+                                <h2>低于&nbsp;￥&nbsp;40 </h2>
+                                <div class="textRight">
+                                    <a href="" class="boder-prc1"><span><p>低于￥40</p></span></a>
+                                    <a href="" class="boder-prc2"><span><p>低于￥20</p></span></a>
+                                </div>
+                            </div>
+                            <!--中间图片盒子-->
+                            <div  class="price_img_minBox" >
+                                <ul class="minI">
+                                    <li  class="priceImg"><img src="images/img-1.png" alt=""></li>
+                                    <li  id="pt1" class="hideBox-min"><img src="images/hidebox-1.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-2.png" alt=""></li>
+                                    <li  id="pt2" class="hideBox-min"><img src="images/hidebox-2.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-3.png" alt=""></li>
+                                    <li  id="pt3" class="hideBox-min"><img src="images/hidebox-3.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-4.png" alt=""></li>
+                                    <li  id="pt4" class="hideBox-min"><img src="images/hidebox-4.png" alt=""></li>
+                                </ul>
+                                <ul class="minII">
+                                    <li  class="priceImg"><img src="images/img-5.png" alt=""></li>
+                                    <li  id="pt5" class="hideBox-min"><img src="images/hidebox-5.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-6.png" alt=""></li>
+                                    <li  id="pt6" class="hideBox-min"><img src="images/hidebox-6.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-7.png" alt=""></li>
+                                    <li  id="pt7" class="hideBox-min"><img src="images/hidebox-7.png" alt=""></li>
+                                    <li  class="priceImg"><img src="images/img-8.png" alt=""></li>
+                                    <li  id="pt8" class="hideBox-min"><img src="images/hidebox-8.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div id="slider_ctrl" class="slider-ctrl">
+                                <span class="ctrl1"></span>
+                                <span class="ctrl2"></span>
+                            </div>
+                        </div>
+                        <!--按钮部分-->
+                        <div id="btn-left">
+                            <div id="btn_prev"><span class="bt1"><</span></div>
+                        </div>
+                        <div id="btn-right">
+                            <div id="btn_next"><span class="bt2">></span></div>
+                        </div>
+                    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部盒子!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div id="anliuqing">
+        <div class="footer_1">
+            <div class="w">
+                <div class="z">
+                    <div class="footer_title"> <span>正在寻找推荐?</span></div>
+                    <div class="footer_main"><br>
+                        <p>登录以查看个性化推荐</p>
+                        <br>
+                        <span> <a href="">登录</a></span>
+                        <br/>
+                        <p>或者<a href="">注册</a>并免费加入 Steam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_2">
+            <div class="w">
+                <div class="z">
+                    <div class="footer_2_bottom">
+                        <div class="logo">
+                            <div id="logo-box">
+                                <span class="logo_1"><a href="http://www.valvesoftware.com/"><img src="images/logo_valve_footer.png" alt=""></a></span>
+                            <span class="intr">
+                                <p>©2016 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</p>
+                                <p>所有的价格均已包含增值税（如适用)。&nbsp;&nbsp;<span>隐私政策</span>&nbsp;&nbsp; |&nbsp;&nbsp; <span>法律信息</span>&nbsp;&nbsp;|&nbsp;&nbsp; <span>Steam 用户协议</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>退款</span></p>
+                           </span>
+                            </div>
+                            <div style="clear: left;"></div>
+
+                            <div class="rule"></div>
+
+                            <div class="valve_links">
+                                <a href="#">关于 Valve</a>
+                                &nbsp; | &nbsp;<a href="#" >Steamworks</a>
+                                &nbsp; | &nbsp;<a href="#" >工作</a>
+                                &nbsp; | &nbsp;<a href="#" >Steam 分销</a>
+                                &nbsp; | &nbsp;<a href="#" >礼物卡</a>
+                                &nbsp; | &nbsp;<a href="#" ><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+                                &nbsp; | &nbsp;<a href="#" ><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam_games</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</div>
+
+            <script src="jquery-3.1.0.js"></script>
+            <script src="zgl_top.js"></script>
+            <!--<script src="轮播.js"></script>-->
+            <!--<script src="zgl_the_center_of_content_right_nav.js"></script>-->
+                <script>
+                var an = 0;
+                //底部按钮滑动动画开始
+                $('ul li').on('mouseenter',function(){
+                an = $(this).index();
+                console.log(an);
+                $(this).addClass('current').siblings('li').removeClass('current');
+                $(' .big > div').eq(an).fadeIn('fast').siblings('div').fadeOut();
+                }).triggerHandler('mouseenter');
+
+                //鼠标移到左箭头开始动画
+                $('.big-left').on('click',function(e){
+                e = e || window.event;
+                e.preventDefault();
+                an--;
+                an < 0 ? an = 1 : an;
+                console.log(an);
+                $('.big-bottom > ul > li').eq(an).addClass('current').siblings('li').removeClass('current');
+                $('.big > div').eq(an).fadeIn('slow').siblings('div').fadeOut();
+                });
+
+                //鼠标移到右箭头开始动画
+                $('.big-right').on('click',function(e){
+                e = e || window.event;
+                e.preventDefault();
+                an++;
+                an > 1 ? an = 0 : an;
+                console.log(an);
+                $('.big-bottom > ul > Li').eq(an).addClass('current').siblings('li').removeClass('current');
+                $('.big > div').eq(an).fadeIn('slow').siblings('div').fadeOut();
+
+                });
+
+                //轮播鼠标滑过出现提示框部分(可以简化...)
+                $('.page2>.left2>.left2-pic1').on('mouseover',function(){$('.a1').show();});
+                $('.page2>.left2>.left2-pic1').on('mouseout',function(){$('.a1').hide();});
+                $('.page2>.left2>.left2-pic2').on('mouseover',function(){$('.a2').show();});
+                $('.page2>.left2>.left2-pic2').on('mouseout',function(){$('.a2').hide();});
+
+                $('.page2>.center2>.center2-pic1').on('mouseover',function(){$('.a3').show();});
+                $('.page2>.center2>.center2-pic1').on('mouseout',function(){$('.a3').hide();});
+                $('.page2>.center2>.center2-pic2').on('mouseover',function(){$('.a4').show();});
+                $('.page2>.center2>.center2-pic2').on('mouseout',function(){$('.a4').hide();});
+
+                $('.page2>.right2>.right2-pic1').on('mouseover',function(){$('.a5').show();});
+                $('.page2>.right2>.right2-pic1').on('mouseout',function(){$('.a5').hide();});
+                $('.page2>.right2>.right2-pic2').on('mouseover',function(){$('.a6').show();});
+                $('.page2>.right2>.right2-pic2').on('mouseout',function(){$('.a6').hide();});
+
+                $('#page1>.center>.center-pic1').on('mouseover',function(){$('.a7').show();});
+                $('#page1>.center>.center-pic1').on('mouseout',function(){$('.a7').hide();});
+                $('#page1>.center>.center-pic2').on('mouseover',function(){$('.a8').show();});
+                $('#page1>.center>.center-pic2').on('mouseout',function(){$('.a8').hide();});
+
+                $('#page1>.right>.right-pic1').on('mouseover',function(){$('.a9').show();});
+                $('#page1>.right>.right-pic1').on('mouseout',function(){$('.a9').hide();});
+                $('#page1>.right>.right-pic2').on('mouseover',function(){$('.a10').show();});
+                $('#page1>.right>.right-pic2').on('mouseout',function(){$('.a10').hide();})
+
+
+</script>
+<!--鉴赏家-->
+                    <script>
+                        var ViewerIMG = document.getElementsByClassName('ViewerIMG');
+                        for (var i = 0;i<ViewerIMG.length;i++){
+                            ViewerIMG[i].style.backgroundImage = 'url(viewer'+ (i+1) +'.jpg)';
+                        }
+                        $('#SVB-middle > ul > li').on('mouseenter',function () {
+                            $(this).css('background','linear-gradient(to right,rgb(48,112,155),rgb(39,53,69))').siblings('li').css('background','linear-gradient(to right,rgb(53,95,122),rgb(38,50,64))');
+                        });
+                        $('.SVB-findmore').on('mouseenter',function () {
+                            $(this).css('border-color','white')
+                        });
+                        $('.SVB-findmore').on('mouseout',function () {
+                            $(this).css('border-color','rgb(118,126,136)')
+                        })
+                    </script>
+                    <!--最大导航栏+低于40-->
+                    <script>
+                        var indexF1 = 0;
+                        var indexCh = 0;
+                        var pit = $('#pit');
+                        var insideBox = document.getElementsByClassName('insideBox');
+                        for (var i = 0;i < insideBox.length;i++){
+                            document.getElementsByClassName('insideBox')[i].style.backgroundImage = 'url(insideIMG'+ i + '.jpg)';
+                        }
+                        $('#bigbox > ul > li').eq(0).fadeIn('fast').siblings('li').fadeOut('fast');
+                        $('#bottom > ul > li').eq(0).fadeIn('fast').siblings('li').fadeOut('fast');
+                        pit.css('background-image','url(outsideIMG' + 0 + 0 + '.png)').fadeIn('fast');
+                        $('#bigbox > ol > li').on('click',function () {
+                            indexF1 = $(this).index();
+                            $(this).addClass('currentF').siblings('li').removeClass('currentF');
+                            $('#bigbox > ul > li').eq(indexF1).fadeIn('fast').siblings('li').fadeOut('fast');
+                            var list = $('#bigbox > .wallbox >li');
+                            var listCh = list.children()[indexF1];
+                            listCh.className = 'id1F1';
+                            $('.id1F1 > ul > li').on('mouseenter',function () {
+                                $(this).addClass('currentF1').siblings('li').removeClass('currentF1');
+                                listCh.className = '';
+                                indexCh = $(this).index();
+                                //哥哥写的,记住这个格式
+                                pit.css('background-image','url(outsideIMG' + indexF1 + indexCh + '.png)').fadeIn('fast');
+                            });
+                            $('#bottom > ul > li').eq(indexF1).fadeIn('fast').siblings('li').fadeOut('fast');
+                        }).triggerHandler('mouseenter');
+                        $('#bottom > ul > li > div').on('mouseenter',function () {
+                            $(this).css('border-color','#f7f7f7').siblings('div').css('border-color','grey');
+                        });
+                        //隔开
+                        var indexFR = 0;
+                        var currentName;
+                        var indexCu = 0;
+                        //    var hideBox =document.getElementsByClassName('hideBox-min');
+                        //    for (var i = 0;i<=3;i++){
+                        //        if(i!=3){
+                        //            document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * i;
+                        //        }
+                        //        else  document.getElementsByClassName('hideBox-min')[i].style.marginLeft = 227 * (i - 1);
+                        //    }
+                        $('.hideBox-min').fadeOut('fast');
+                        $('.slider-ctrl > span').eq(0).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+                        $('.price_img_minBox > ul').eq(0).fadeIn('fast').siblings('ul').fadeOut('fast');
+                        $('.price_img_minBox > ul').eq(0).addClass('currentF2').siblings('ul').removeClass('currentF2');
+                        $('.currentF2 > .priceImg').on('mouseenter',function () {
+                            indexCu =  $(this).index();
+                            $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 > .hideBox-min').fadeOut('fast');
+                        });
+                        $('.currentF2 > .priceImg').on('mouseout',function () {
+                            $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+                        });
+                        $('#slider_ctrl > span').on('mouseenter',function () {
+                            indexFR = $(this).index();
+                            $(this).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+                            $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+                            $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+                            $('.currentF2 > .priceImg').on('mouseenter',function () {
+                                indexCu =  $(this).index();
+                                $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 > .hideBox-min').fadeOut('fast');
+                            });
+                            $('.currentF2 > .priceImg').on('mouseout',function () {
+                                $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+                            })
+                        });
+                        $('#btn-left').on('click',function () {
+                            indexFR--;
+                            if (indexFR < 0){
+                                indexFR = 1;
+                            }
+                            $('.slider-ctrl > span').eq(indexFR).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+                            $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+                            $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+                            $('.currentF2 > .priceImg').on('mouseenter',function () {
+                                indexCu =  $(this).index();
+                                $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+                            });
+                            $('.currentF2 > .priceImg').on('mouseout',function () {
+                                $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+                            })
+                        });
+                        $('#btn-right').on('click',function () {
+                            indexFR++;
+                            if (indexFR > 1){
+                                indexFR= 0;
+                            }
+                            $('.slider-ctrl > span').eq(indexFR).css('background-color','rgb(118,126,135)').siblings('span').css('background-color','rgb(72,83,95)');
+                            $('.price_img_minBox > ul').eq(indexFR).fadeIn('fast').siblings('ul').fadeOut('fast');
+                            $('.price_img_minBox > ul').eq(indexFR).addClass('currentF2').siblings('ul').removeClass('currentF2');
+                            $('.currentF2 > .priceImg').on('mouseenter',function () {
+                                indexCu =  $(this).index();
+                                $('.currentF2 > li').eq(indexCu + 1).fadeIn('fast').siblings('.currentF2 >.hideBox-min').fadeOut('fast');
+                            });
+                            $('.currentF2 > .priceImg').on('mouseout',function () {
+                                $('.currentF2 > li').eq(indexCu + 1).fadeOut('fast');
+                            })
+                        });
+                        $('.textRight > a').on('mouseenter',function () {
+                            $(this).css('border-color','white').siblings('a').css('border-color','#767e88');
+                        });
+
+                    </script>
+</body>
+</html>

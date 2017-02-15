@@ -1,0 +1,107 @@
+.the_top_of_header{
+    margin: 0 auto;
+    position: relative;
+}
+.resige {
+    width: 200px;
+    height: 30px;
+    margin-right:50px;
+    margin-top:5px;
+    float: right;
+}
+.the_top_of_header a {
+    text-decoration: none;
+    color:grey;;
+}
+.resige a {
+    line-height: 20px;
+}
+.the_top_of_header a:hover{
+    color: white;
+}
+.resige .load,.resige .login{
+    width: 100px;
+    height: 20px;
+    float: left;
+    text-align: center;
+}
+.resige .load a{
+    display: block;
+    width: 95px;
+    height: 17px;
+    background: url("欢迎来到 Steam_files/anzhuang.png");
+    opacity: 0.6;
+    /*background-color: green;*/
+}
+.load a:hover{
+    opacity:1;
+}
+.denglu {
+    font-size: 14px;
+    border-left: 1px solid grey;
+    float: right;
+}
+.zhuce {
+    font-size: 14px;
+    border-right: 1px solid grey;
+    float: left;
+}
+.resige .login{
+    background-color: black;
+}
+.resige .login div {
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: right;
+}
+
+.topBox{
+    width: auto;
+    height: 44px;
+    margin:30px auto 30px 300px;
+    position: absolute;
+}
+.logo{
+    width: 176px;
+    height: 44px;
+    float: left;
+}
+.topNav{
+    width: auto;
+    height: 44px;
+    float: left;
+}
+.top_ul,.top_nav_ul1,.top_nav_ul2{
+    list-style: none;
+}
+.top_nav_ul1,.top_nav_ul2{
+    display: none;
+    width: 80px;
+    position: absolute;
+    top:30px;
+}
+.top_nav_ul2{
+    left: 230px;
+}
+.top_ul .top_nav_ul1 li,.top_ul .top_nav_ul2 li {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    background-color: black;
+    padding-left: 15px;
+}
+.top_ul li {
+    font-size: 14px;
+    width: 50px;
+    height: 44px;
+    float: left;
+    text-align: center;
+    line-height: 44px;
+}
+.top_ul ul {
+    width: 95px;
+    box-shadow: black 0 0 5px;
+}

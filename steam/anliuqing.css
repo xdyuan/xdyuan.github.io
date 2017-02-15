@@ -1,0 +1,127 @@
+﻿      /**{*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
+        #anliuqing ul{
+            list-style: none;
+        }
+
+
+        /*底部样式设置开始*/
+        #anliuqing body{
+            background-color: rgb(21,29,44);
+        }
+        #anliuqing .w{
+            width: 1400px;
+            margin:0 auto;
+        }
+        #anliuqing a{
+            text-decoration: none;
+        }
+        #anliuqing .z{
+            width: 940px;
+            margin-left: 315px;
+        }
+        #anliuqing .footer_1{
+            /*margin-top: 10px;*/
+            width: 1400px;
+            height: 209px;
+            background-color: rgb(0,0,0) ;
+            overflow: hidden;
+        }
+        #anliuqing .footer_1 .footer_title{
+            width: 940px;
+            height: 29px;
+            background-image: url(images/01.png);
+            background-repeat: repeat-x;
+            /*margin-left: 240px;*/
+            margin-top: 18px;
+
+        }
+        #anliuqing .footer_1 .footer_title span{
+            width: 188px;
+            height: 29px;
+            color: #67c1f5;
+            font-size: 24px;
+            margin:0 auto;
+            display:block;
+            background-color: rgb(0,0,0);
+            text-align: center;
+        }
+        #anliuqing .footer_1 .footer_main{
+            width: 940px;
+            height: 162px;
+            /*margin-left: 240px;*/
+            padding: 12px 12px 4px;
+        }
+        #anliuqing .footer_1 .footer_main p{
+            text-align: center;
+            color: #8f98a0;
+            font-size: 15px;
+        }
+        #anliuqing .footer_1 .footer_main span{
+            margin: 0 auto;
+            width: 60px;
+            height: 30px;
+            background-color: #536904;
+            display:block;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #anliuqing .footer_1 .footer_main span a{
+            color:#D2E885 !important;
+            font-size: 15px;
+        }
+        #anliuqing .footer_1 .footer_main span:hover{
+            background-color: #799905;
+        }
+        #anliuqing .footer_1 .footer_main a{
+            color: #ffffff;
+        }
+        #anliuqing .footer_1 .footer_main a:hover{
+            color: #67c1f5;
+            cursor: pointer;
+        }
+        #anliuqing .footer_2{
+            width: 1400px;
+            height: 88px;
+            margin-bottom: 0;
+            background-color: rgb(21,29,44);
+            /*padding:37px 0 35px 0;*/
+            margin－top: 35px;
+        }
+        #anliuqing .footer_2_bottom{
+            color: #8f98a0;
+            font-size: 14px;
+        }
+        #anliuqing .logo .logo_1{
+            margin-right: 100px;
+        }
+        #anliuqing .logo span a, .logo span.intr{
+            float: left;
+            margin-left: 10px;
+        }
+        #anliuqing .logo .rule{
+            height: 18px;
+        }
+        #anliuqing .logo span.intr p{
+            font-size: 12px;
+            line-height: 14px;
+        }
+        #anliuqing .logo span.intr p span{
+            color:#cccccc;
+            cursor: pointer;
+        }
+        #anliuqing .logo .valve_links{
+            margin-left: 10px;
+        }
+        #anliuqing .logo .valve_links a{
+            font-size: 13px;
+            color: #cccccc;
+        }
+        #anliuqing .logo .valve_links a:hover{
+            color:white;
+        }
+        /*底部样式设置结束*/

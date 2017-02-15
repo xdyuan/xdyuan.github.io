@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'respond@1.4.2' ]
+2 info using npm@4.0.1
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData respond@1.4.2
+8 silly fetchNamedPackageData respond
+9 silly mapToRegistry name respond
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'respond',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'respond',
+12 silly mapToRegistry   name: 'respond',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/respond
+14 verbose request uri https://registry.npmjs.org/respond
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:30:35
+17 verbose request id 4db9fb05ea4b7cab
+18 verbose etag "E1X0K05H66HLFJXB2JE7Z7AKA"
+19 http request GET https://registry.npmjs.org/respond
+20 http 304 https://registry.npmjs.org/respond
+21 verbose headers { date: 'Thu, 03 Nov 2016 02:30:35 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"E1X0K05H66HLFJXB2JE7Z7AKA"',
+21 verbose headers   age: '122',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-hkg6825-HKG',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1478140235.914647,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 03 Nov 2016 02:30:35 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"E1X0K05H66HLFJXB2JE7Z7AKA"',
+22 silly get     age: '122',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-hkg6825-HKG',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1478140235.914647,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/respond from cache
+24 verbose get saving respond to /Users/admin/.npm/registry.npmjs.org/respond/.cache.json
+25 verbose correctMkdir /Users/admin/.npm correctMkdir not in flight; initializing
+26 silly fetchNamedPackageData No valid target from cache, forcing network
+27 verbose request uri https://registry.npmjs.org/respond
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 10:30:36
+30 http request GET https://registry.npmjs.org/respond
+31 http 200 https://registry.npmjs.org/respond
+32 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 verbose headers   etag: '"E1X0K05H66HLFJXB2JE7Z7AKA"',
+32 verbose headers   'content-type': 'application/json',
+32 verbose headers   'content-encoding': 'gzip',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '1472',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 03 Nov 2016 02:30:36 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   age: '122',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-hkg6825-HKG',
+32 verbose headers   'x-cache': 'HIT',
+32 verbose headers   'x-cache-hits': '2',
+32 verbose headers   'x-timer': 'S1478140236.253942,VS0,VE0',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 200,
+33 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 silly get     etag: '"E1X0K05H66HLFJXB2JE7Z7AKA"',
+33 silly get     'content-type': 'application/json',
+33 silly get     'content-encoding': 'gzip',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     'content-length': '1472',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Thu, 03 Nov 2016 02:30:36 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     age: '122',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-hkg6825-HKG',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '2',
+33 silly get     'x-timer': 'S1478140236.253942,VS0,VE0',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 verbose get saving respond to /Users/admin/.npm/registry.npmjs.org/respond/.cache.json
+35 verbose correctMkdir /Users/admin/.npm correctMkdir not in flight; initializing
+36 silly fetchPackageMetaData Error: No compatible version found: respond@1.4.2
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 0.9.0
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+36 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+36 silly fetchPackageMetaData  error for respond@1.4.2 { Error: No compatible version found: respond@1.4.2
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 0.9.0
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+36 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+36 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15) code: 'ETARGET' }
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: No compatible version found: respond@1.4.2
+41 verbose stack Valid install targets:
+41 verbose stack 0.9.0
+41 verbose stack
+41 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+41 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+41 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+41 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+41 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+41 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+42 verbose cwd /Users/admin/Desktop/Web备课/07移动Web开发/01 第一天/00code/00 项目案例
+43 error Darwin 15.0.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "respond@1.4.2"
+45 error node v6.9.1
+46 error npm  v4.0.1
+47 error code ETARGET
+48 error notarget No compatible version found: respond@1.4.2
+48 error notarget Valid install targets:
+48 error notarget 0.9.0
+49 error notarget This is most likely not a problem with npm itself.
+49 error notarget In most cases you or one of your dependencies are requesting
+49 error notarget a package version that doesn't exist.
+50 verbose exit [ 1, true ]

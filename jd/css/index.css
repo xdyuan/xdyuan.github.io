@@ -1,0 +1,237 @@
+.banner604 {
+    position: relative;
+}
+.banner604 .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 604px;
+    background: url("../images/banner.jpg") no-repeat top center;
+}
+
+.main {
+
+    position: relative;
+}
+
+.main .slider {
+    width: 730px;
+    height: 454px;
+    margin: 12px 0 0 220px;
+    background-color: pink;
+    float: left;
+    position: relative;
+}
+
+.circle  {
+
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -66px;
+
+}
+.circle li {
+    width: 18px;
+    height: 18px;
+    float: left;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    color: #FFF;
+    text-align: center;
+    line-height: 18px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.circle li.current {
+    background-color: #B61B1F;
+}
+.main .news {
+    width: 248px;
+    height: 452px;
+    border: 1px solid #E4E4E4;
+    float: right;
+    margin-top: 12px;
+}
+
+.arrow-l, .arrow-r {
+    display: block;
+    width: 28px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    background: rgba(0, 0, 0, .2);
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "SimSun", "宋体";
+    text-align: center;
+    line-height: 62px;
+    color: #fff;
+}
+.arrow-l {
+    left: 0;
+}
+.arrow-r {
+    right: 0;
+}
+.arrow-l:hover, .arrow-r:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+}
+.jd-news {
+    height: 200px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.jd-news .dt, .lifeservice .dt {
+    height: 43px;
+    border-bottom: 1px dotted #E8E8E7;
+    line-height: 43px;
+}
+.jd-news .dt h3, .lifeservice .dt h3 {
+    float: left;
+    font: 400 15px/43px "微软雅黑";
+    padding-left: 15px;
+    color: #666666;
+}
+.jd-news .dt a {
+    float: right;
+    font: 13px/43px "宋体";
+    padding-right: 15px;
+    color: #666;
+}
+
+.jd-news .dd {
+
+}
+.jd-news .dd ul {
+    padding: 8px 0 0 15px;
+}
+.jd-news .dd li {
+    line-height: 28px;
+    font-size: 13px;
+
+}
+.jd-news .dd li span {
+    font-weight: 700;
+    font-family: "微软雅黑";
+    margin-right: 7px;
+}
+
+.lifeservice {
+    height: 251px;
+    overflow: hidden;
+    width: 248px;
+}
+
+.lifeservice .dd ul {
+    width: 252px;
+}
+.lifeservice .dd li {
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E4E4E4;
+    float: left;
+    margin: -1px 0 0 -1px;
+}
+
+.lifeservice .dd li a {
+    display: block;
+    height: 70px;
+    text-align: center;
+    padding-top: 48px;
+    position: relative;
+
+}
+.lifeservice .dd li i {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/icon_lifeserv.png) no-repeat right top;
+}
+
+.lifeservice .dd .ls-icon2 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -25px;
+
+}
+.lifeservice .dd .ls-icon3 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -50px;
+}
+
+.lifeservice .dd .ls-icon4 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -75px;
+
+}
+.lifeservice .dd .ls-icon5 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -100px;
+
+}
+.lifeservice .dd .ls-icon6 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -125px;
+
+}
+.lifeservice .dd .ls-icon7 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -150px;
+
+}
+
+.lifeservice .dd .ls-icon8 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -175px;
+
+}
+.lifeservice .dd .ls-icon9 i{
+     background: url(../images/icon_lifeserv.png) no-repeat right -200px;
+ }
+.lifeservice .dd .ls-icon10 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -225px;
+
+}
+.lifeservice .dd .ls-icon11 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -250px;
+
+}
+.lifeservice .dd .ls-icon12 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -275px;
+
+}
+
+.lifeservice .mian {
+    background: url(../images/mian.png) no-repeat top right;
+}
+
+.lifeservice .song {
+    background: url(../images/song.png) no-repeat top right;
+}
+
+.todays {
+
+    margin-top: 20px;
+    margin-bottom: 28px;
+    position: relative;
+
+}
+.night .night-l {
+    height: 151px;
+    background-color: red;
+    float: left;
+}
+.night-r {
+    float: right;
+    width: 1000px;
+    height: 160px;
+
+}
+
+.night-r li {
+    float: left;
+    margin-right: 1px;
+}
+.night-r ul {
+    width: 500%;
+}
+
+

@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.the_top_of_header{
+    width:1400px;
+    height:104px;
+    background-color: black;
+}
+
+.the_center_of_content{
+    width:1280px;
+    height:auto;
+    padding-top: 40px;
+    background-color: transparent;
+}
+.the_center_of_content_left_nav{
+    height:742px;
+    width:176px;
+    padding-left: 16px;
+    float: left;
+    overflow: hidden;
+}
+.the_center_of_content_left_nav  .the_center_of_content_left_nav_top{
+    height:382px;
+    width:176px;
+    margin-bottom: 20px;
+}
+.the_center_of_content_left_nav  .the_center_of_content_left_nav_bottom{
+    height:320px;
+    width:176px;
+    background-color: rgb(53,73,89);
+}
+.the_center_of_content_right{
+    height:auto;
+    width: 1085px;
+    float:right;
+}
+.the_center_of_content_right .the_center_of_content_in{
+    margin-left: 100px;
+    width:940px;
+    height:auto;
+    /*background-color: transparent;*/
+}
+.the_center_of_content_right .the_center_of_content_right_nav{
+    height: 35px;
+    width: 940px;
+    box-shadow: black 0 0 10px;
+    margin-bottom: 20px;
+}
+.the_center_of_content_right .the_center_of_content_right_shopping_nav{
+    height: 60px;
+    width: 940px;
+    margin-bottom: 20px;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box{
+    width: 940px;
+    height: 353px;
+    margin-top: 10px;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box .the_center_of_content_right_choice_content_box_left{
+width: 616px;
+height: 353px;
+float: left;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box .the_center_of_content_right_choice_content_box_left{
+    width: 616px;
+    height: 353px;
+    float: left;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box .the_center_of_content_right_choice_content_box_right .the_center_of_content_right_choice_content_box_right_up{
+    width: 312px;
+    height: 69px;
+    padding-top: 10px;
+    margin: 10px 6px 0 6px;
+    background-color: black;
+    float: left;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box .the_center_of_content_right_choice_content_box_right .the_center_of_content_right_choice_content_box_right_center{
+    width:312px;
+    height:170px;
+    background-color: black;
+    float: left;
+    margin: 10px 6px 10px 6px;
+}
+.the_center_of_content_right .the_center_of_content_right_choice_box .the_center_of_content_right_choice_content_box_right .the_center_of_content_right_choice_content_box_right_down{
+    width:312px;
+    height:67px;
+    background-color: black;
+    float: left;
+    margin: 0 6px 0 6px;
+}
+.the_center_of_content_right  .the_center_of_content_right_choice_bottom{
+    width: 940px;
+    height: 40px;
+    float: left;
+    margin-bottom: 20px;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box {
+    width: 940px;
+    height: 402px;
+    float:left;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box .the_center_of_content_discount_first,.the_center_of_content_discount_second{
+    width:306px;
+    height: 350px;
+    background: green;
+    margin: 25px 8px 20px 2px;
+    float: left;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box .the_center_of_content_discount_second{
+    margin:25px 8px 20px 0;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box .the_center_of_content_discount_third{
+    width:306px;
+    height:360px;
+    float: left;
+    margin-top: 25px;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box .the_center_of_content_discount_third_top{
+    width:auto;
+    height:187px;
+    background-color: darkturquoise;
+    margin-bottom: 15px;
+}
+.the_center_of_content_right  .the_center_of_content_discount_box .the_center_of_content_discount_third_bottom{
+    width:auto;
+    height: 157px;
+    background-color: steelblue;
+}
+.the_center_of_content_steam_nav{
+    width: 940px;
+    height: 175px;
+    background-color: lightskyblue;
+    float: left;
+}
+.the_center_of_content_steam_nav .the_center_of_content_steam_nav_box{
+    width:940px;
+    height:58px;
+    margin:40px 0 40px 0;
+    background-color: yellowgreen;
+}
+.the_center_of_content_steam_nav_box .the_center_of_content_steam_nav_first,.the_center_of_content_steam_nav_second ,.the_center_of_content_steam_nav_third,.the_center_of_content_steam_nav_forth{
+    width: 226px;
+    height: 58px;
+    margin-right: 8px;
+    float: left;
+    background-color: orangered;
+}
+.the_center_of_content_steam_new_game{
+    width: 940px;
+    height: 247px;
+    float: left;
+    margin-top: 40px;
+}
+.the_center_of_content_steam_new_game .the_center_of_content_steam_new_game_box{
+    width: 940px;
+    height: 194px;
+    background-color: brown;
+
+}
+
+
+

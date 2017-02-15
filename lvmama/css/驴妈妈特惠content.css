@@ -1,0 +1,146 @@
+/*左边的内容*/
+
+/*下面的最大盒子*/
+.special-content-box{
+	position: relative;
+	height: 506px;
+	background: url('../images/content背景图.jpg') no-repeat left  0 #92DEFE;
+}
+/*左边的盒子*/
+.content-left{
+	width: 255px;
+	float: left;
+	height: 460px;
+}
+/*左边盒子里面的ul*/
+.content-left>ul{
+    width: 205px;
+    height: 107px;
+	margin: 345px auto 0;
+}
+/*左边盒子里面li的hover伪类事件*/
+.content-left>ul>li{
+	width: 205px;
+	height: 31px;
+	padding-bottom: 7px;
+	font-size: 14px;
+	line-height: 28px;
+	background: url("../images/left-bar.png")no-repeat 0 top;
+}
+/*左边盒子里面的li>的a 标签链接*/
+.content-left>ul>li>a{
+	padding-left: 10px;
+	color: white;
+	font-family: 'Microsoft Yahei';
+}
+
+/*右边图片的主要内容*/
+/*右边的大box盒子*/
+.content-right{
+	width: 945px;
+	height:499px;
+	float: left;
+	padding-top:15px;
+	position: relative;
+}
+.img-next, .img-prev{
+	width: 950px;
+	height: 499px;
+	position: relative;
+	left: 0;
+	top:-20px;
+}
+
+/*右边盒子的Li标签*/
+.img-next li , .img-prev li{
+	float: left;
+	width: 216px;
+	height: 222px;
+	background: white;
+	padding: 5px;
+	margin: 0 10px 10px 0;
+	overflow: hidden;
+}
+/*这样清除浮动*/
+
+.img-next li.li3 , .img-prev li.li3 {
+	width: 0;
+	height: 0;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+/*li标签里面的第一个a标签,第一个a标签放着一样图片内容*/
+.img-next>li>a>img,.img-prev>li>a>img{
+	width: 215px;
+	height: 143px;
+}
+/*Li标签里面的第二个A标签放着的字体*/
+.img-next .text-family , .img-prev .text-family{
+	display: block;
+	font-size: 14px;
+	width: 216px;
+	height: 36px;
+	margin: 5px auto 0;
+	font-family:"Microsoft Yahei";
+	overflow:hidden;
+	color: black;
+}
+.img-next .images-01 , .img-prev .images-01{
+	position: relative;
+}
+/*表示打折字的背景*/
+.img-next .discount, .img-prev .discount{
+	position: absolute;
+	display: inline-block;
+	width: 53px;
+	height: 22px;
+	left: 0;
+	background: rgba(244,72,44,1);
+	text-align: center;
+	line-height: 22px;
+	font-family: "Arial";
+	font-size: 16px;
+	color: #ffffff;
+}
+.img-next .price,.img-prev.price{
+	width: 216px;
+	height: 25px;
+	margin-top: 10px;
+	/*background: red;*/
+}
+.img-next .price span,.img-prev.price span{
+	width: 95px;
+	height: 18px;
+}
+.img-next .price span dfn , .img-next .price span dfn i , .img-prev .price span dfn , .img-prev .price span dfn i{
+	color: rgba(255,102,0,1);
+}
+.img-next .price span dfn i, .img-prev .price span dfn i{
+	font-size: 16px;
+}
+/*表示888的字体和颜色*/
+.img-next .price span dfn, .img-prev .price span dfn{
+	font-family: "Arial";
+	font-size: 20px;
+}
+/*表示span标签中的"起"字大小和颜色*/
+.img-next .price span,.img-prev .price span{
+	font-size: 14px;
+	color: #DDDDDD;
+}
+.img-next .price span >del ,.img-prev.price span>del{
+	font-size: 10px;
+}
+
+/*动画效果的*/
+.content-left>ul>li:hover {
+	background: url("../images/left-bar.png")no-repeat 0 -40px;
+	text-decoration: underline;
+}
+
+/*图片下面的文字特效*/
+.img-next .text-family:hover , .img-prev .text-family:hover {
+	color: #f60;
+	text-decoration: underline;
+}

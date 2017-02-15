@@ -1,0 +1,373 @@
+.the_center_of_content_right_nav ul {
+    width: 600px;
+    list-style: none;
+    position: absolute;
+    font-size: 13px;
+}
+.the_center_of_content_right_nav{
+    background:rgb(39,91,132);
+    height: 34px;
+    position: relative;
+}
+.the_center_of_content_right_nav ul li {
+    /*width: 100px;*/
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(39,91,132);
+    float: left;
+}
+.ul_item {
+    width: 100px;
+    background-color: rgb(39,91,132);
+    /*width: 100px;*/
+    height: auto;
+    box-shadow: black 0 0 5px;
+    display: none;
+    text-decoration: none;
+}
+.the_center_of_content_right_nav_ul .ul_item{
+    width: 100px;
+    box-shadow: black 0 0 5px;
+}
+.a_item{
+    /*height: 25px;*/
+    /*line-height: 25px;*/
+    text-decoration: none;
+    color: black;
+    background-color: #c6d4df;
+}
+.a_item_nav{
+    background:rgb(39,91,132);
+}
+.li_item .a_item{
+    /*line-height: 25px;*/
+    color: black;
+}
+.li_item .a_item:hover{
+    color: white;
+    background:rgb(53,73,89);
+}
+.the_center_of_content_right_nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 35px;
+}
+.a_item.a_item_nav{
+    display: block;
+    text-decoration: none;
+    color: black;
+    /*line-height: 30px;*/
+    line-height: 50px;
+}
+.li_item{
+    width: 50px;
+    height: 30px;
+    clear: both;
+    /*padding: 5px;*/
+}
+.the_center_of_content_right_nav a:hover{
+    color: black;
+}
+
+
+.the_center_of_content_right_nav_search{
+    width: 214px;
+    height: 30px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.search_input {
+    width: 180px;
+    height: 26px;
+    float: right;
+    border-right: none;
+    /*color: black;   */
+    background-color:    rgb(36,79,112);
+    border:black solid 1px;
+}
+.zgl_search{
+    width: 25px;
+    height: 25px;
+    background: url("欢迎来到 Steam_files/zgl_search.png");
+    position: absolute;
+    left: 908px;
+    top: 5px;
+}
+.zgl_search:hover{
+    opacity: 0.5;
+}
+/*.search_a img {*/
+    /*width: 100%;*/
+    /*height: 25px;*/
+    /*position: absolute;*/
+    /*border-left: none;*/
+    /*margin-top: 3px;*/
+    /*z-index: 0;*/
+
+/*}*/
+
+.the_center_of_content_right_shopping_nav {
+    background-color: #c6d4df;
+    box-shadow: black 0 0 5px;
+    overflow: hidden;
+}
+.the_center_of_content_right_shopping_nav:hover{
+    /*border:1px solid #1b2e40;*/
+    /*box-shadow: grey 0 0 5px;*/
+}
+.the_center_of_content_right_shopping_nav .img_bgc_a{
+    display: block;
+    width: 940px;
+    height: 60px;
+    float: left;
+    background: url("欢迎来到 Steam_files/zgl_nav.png") no-repeat;
+    /*position: absolute;*/
+    /*background-color: red;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.the_center_of_content_right_choice_content_box_left{
+    padding-top: 4px;
+    padding-left: 0px;
+
+}
+.big_img{
+    width: 608px;
+    height: 345px;
+}
+.the_center_of_content_right_choice_bottom{
+    /*background: red;*/
+    /*border:1px solid #1b2e40;*/
+    /*box-shadow: black 0 0 5px;*/
+}
+.botton_ul{
+    /*opacity: 0;*/
+    width: 450px;
+    list-style: none;
+    margin-left: 350px;
+    margin-top: 10px;
+    position: absolute;
+}
+.botton_ul li{
+    /*opacity: 1;*/
+    width: 15px;
+    height: 9px;
+    float: left;
+    background-color: rgb(53,73,89);
+    margin-left: 5px;
+    /*background-color: red;*/
+    text-align: center;
+    border-radius: 3px;
+    /*display: none;*/
+}
+.botton_ul li:hover{
+    background-color: #6a8caa;
+}
+body{
+    background: linear-gradient(to bottom,rgb(15,37,58),rgb(53,73,89),rgb(15,37,58));
+    /*opacity: 2;*/
+}
+.box_center_color{
+    /*background:rgb(18,46,69);*/
+    height: 595px;
+    /*background: linear-gradient(to bottom,rgb(15,37,58),rgb(53,73,89),rgb(15,37,58));*/
+}
+.the_center_of_content_right_choice_content_box_right_center1{
+    width: 150px;
+    height: 80px;
+    background-color: black;
+    float: left;
+}
+.the_center_of_content_right_choice_content_box_right_center img{
+    width: 150px;
+    height: 80px;
+}
+.the_center_of_content_right_choice_content_box_right_center2{
+    width: 150px;
+    height: 80px;
+    background-color: green;
+    float: right;
+}
+.the_center_of_content_right_choice_content_box_right_center3{
+     width: 150px;
+     height: 80px;
+     background-color: yellow;
+     float: left;
+     margin-top: 10px;
+}
+.the_center_of_content_right_choice_content_box_right_center4{
+    width: 150px;
+    height: 80px;
+    background-color: deeppink;
+    float: right;
+    margin-top: 10px;
+
+}
+
+.box_ul{
+    list-style: none;
+    position: relative;
+    background-color: black;
+}
+.box_ul li {
+    display: none;
+    position: relative;
+}
+.box_ul .box_li{
+    display: block;
+    /*position: absolute;*/
+}
+
+
+.the_center_of_content_right_choice_left{
+    text-align: center;
+    width: 45px;
+    height: 108px;
+    color: white;
+    font-size: 40px;
+    line-height: 108px;
+    /*background: url("欢迎来到 Steam_files/zglleft.png");*/
+    /*border: 1px solid #1b2e40;*/
+    background: linear-gradient(to right,rgb(14,33,46),rgb(18,47,68));
+    /*box-shadow: black 0 0 5px;*/
+    position: absolute;
+    border-right: none;
+    left: 246px;
+    top: 450px;
+}
+.the_center_of_content_right_choice_left:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%);
+    /*opacity: 0.6;*/
+    /*border: 1px solid #1b2e40;*/
+    /*box-shadow: grey 0 0 5px;*/
+
+
+}
+.the_center_of_content_right_choice_right{
+    text-align: center;
+    line-height: 108px;
+    color: white;
+    font-size: 40px;
+    width: 45px;
+    height: 108px;
+    background: linear-gradient(to left,rgb(14,33,46),rgb(18,47,68));
+    /*border: 1px solid #1b2e40;*/
+    /*background: url("欢迎来到 Steam_files/zglright.png");*/
+    /*box-shadow: black 0 0 5px;*/
+    border-left: none;
+    position: absolute;
+    left: 1240px;
+    top: 450px;
+}
+.the_center_of_content_right_choice_right:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);
+    /*opacity: 0.6;*/
+    /*border: 1px solid #1b2e40;*/
+    /*box-shadow: grey 0 0 10px;*/
+    border-left: none;
+}
+
+.the_center_of_content_right_choice_content_box img{
+    /*z-index: 0;*/
+}
+
+.the_center_of_content_right_choice_content_box_right_down img {
+    width: 312px;
+    height: 67px;
+}
+
+.the_center_of_content_right_choice_content_box{
+    width: 940px;
+    height: 350px;
+    /*border:1px solid #1b2e40;*/
+    box-shadow: black 0 0 5px;
+}
+
+.zgl1{
+    width: 312px;
+    height: 40px;
+    float: left;
+    background-color: black;
+}
+.zgl2{
+    width: 160px;
+    height: 27px;
+    float: left;
+    background-color: black;
+}
+.zgl3{
+    width: 152px;
+    height: 27px;
+    float: right;
+    background-color: black;
+    background: url("欢迎来到 Steam_files/zgl.png");
+}
+.zgl1 p {
+    font-size: 1.5em;
+    color: white;
+}
+.zgl2 p {
+    font-size: 1em;
+    color: white;
+}
+
+
+.the_center_of_content_right_choice_content_box_right_up{
+    background-color: black;
+}
+.the_center_of_content_right_choice_content_box_right_up p{
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.a_item_nav{
+    /*background-color: rgb(39,91,132);*/
+    color: white;
+}
+
+.search_input::-webkit-input-placeholder{
+    color: black;;
+}
+
+
+.zgl_li1{
+    width: 100px;
+}
+.zgl_li2,.zgl_name1{
+    width: 78.9px;
+}
+.zgl_li3,.zgl_name2{
+    width: 50px;
+}
+.li_item{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

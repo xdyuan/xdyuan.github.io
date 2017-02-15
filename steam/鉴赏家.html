@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .steamViewBox{
+            background-color: rgb(27,40,56);
+            width: 1265px;
+            height: 300px;
+            position: relative;
+        }
+        #SVB-title{
+            width: 990px;
+            height: 70px;
+            position: relative;
+            background-color: rgb(27,40,56);
+            margin-left: 270px;
+        }
+        #SVB-middle{
+            width: 990px;
+            height: 188px;
+            position: relative;
+            margin-left: 270px;
+        }
+        #SVB-middle ul li{
+            width: 308px;
+            height: 90px;
+            float: left;
+            background: linear-gradient(to right,rgb(53,95,122),rgb(38,50,64));
+            border: 1px solid black;
+            margin-left: 5px;
+            margin-top: 5px;
+            position: relative;
+        }
+        .SVB-bigtitle{
+            width: 135px;
+            height: 20px;
+            text-align: left;
+            line-height: 20px;
+            color: white;
+            font-size: 21px;
+            float: left;
+            margin-top: 28px;
+
+        }
+        .SVB-describe{
+            width: 450px;
+            height: 20px;
+            color: rgb(187,212,223);
+            font-size: 15px;
+            float: left;
+            margin-top: 50px;
+            margin-left: -132px;
+        }
+        .ViewerIMG{
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+        .ViewerTitle{
+            width: 225px;
+            height: 20px;
+            float: left;
+            margin-top: 12px;
+            margin-left: 80px;
+            color: white;
+
+        }
+        .SVB-findmore{
+            width: 78px;
+            height: 20px;
+            border: 1px solid rgb(118,126,136);
+            position: absolute;
+            top: 35px;
+            right: 50px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 10px;
+        }
+        .Viewertext{
+            width: 212px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 15px;
+            color: rgb(171,218,244);
+            margin-left: 80px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="steamViewBox">
+    <div id="SVB-title">
+        <div class="SVB-bigtitle"><b>STEAM 鉴赏家</b></div>
+        <div class="SVB-describe">通过 Steam 鉴赏家探索新游戏。关注鉴赏家并查看其推荐的游戏。</div>
+        <div class="SVB-findmore">查找更多</div>
+    </div>
+    <div id="SVB-middle">
+        <ul>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</div>
+                <div class="Viewertext"><i>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</i></div>
+            </li>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">中国玩家鉴赏组</div>
+                <div class="Viewertext"><i>“关注中国玩家鉴赏组，能为你实时推荐自你关注以来大部分大作品的游戏测评，也希望各位拥有大量游戏的</i></div>
+            </li>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">散人games</div>
+                <div class="Viewertext"><i>散人games</i></div>
+            </li>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">游戏特工组</div>
+                <div class="Viewertext"><i>欢迎大家关注我们，我们会努力做出更好的游戏评测。感谢大家的订阅~</i></div>
+            </li>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">百度显卡吧官方组</div>
+                <div class="Viewertext"><i>百度显卡吧官方组，华语Steam游戏评测。关注游戏性，关注优化，关注好游戏。</i></div>
+            </li>
+            <li>
+                <div class="ViewerIMG"></div>
+                <div class="ViewerTitle">国人交流组【天朝】</div>
+                <div class="Viewertext"><i>这些游戏值得一玩</i></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="jquery-3.1.0.js"></script>
+<script>
+    var ViewerIMG = document.getElementsByClassName('ViewerIMG');
+    for (var i = 0;i<ViewerIMG.length;i++){
+        ViewerIMG[i].style.backgroundImage = 'url(viewer'+ (i+1) +'.jpg)';
+    }
+    $('#SVB-middle > ul > li').on('mouseenter',function () {
+        $(this).css('background','linear-gradient(to right,rgb(48,112,155),rgb(39,53,69))').siblings('li').css('background','linear-gradient(to right,rgb(53,95,122),rgb(38,50,64))');
+    });
+    $('.SVB-findmore').on('mouseenter',function () {
+       $(this).css('border-color','white')
+    });
+    $('.SVB-findmore').on('mouseout',function () {
+        $(this).css('border-color','rgb(118,126,136)')
+    })
+</script>
+</body>
+</html>

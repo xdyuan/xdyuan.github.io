@@ -1,0 +1,149 @@
+.head{
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+}
+.head .head_top{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(250,250,250);
+}
+.head .head_top .ul_left{
+    float: left;
+    list-style: none;
+}
+.head .head_top .ul_left li,.ul_right li{
+    float: left;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+.head .head_top .ul_left li .ul_left_li1_span{
+    /*position: relative;*/
+    /*top:4px;*/
+    margin-bottom:-4px;
+    background: url("../images/header_icon.png") no-repeat 0 -69px;
+}
+.head .head_top .ul_right{
+    float: right;
+    list-style: none;
+}
+.head .head_top .ul_right a span{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-right: 2px;
+}
+
+
+.head .head_top .ul_right .ul_right_wechat{
+    background: url("../images/header_icon.png") no-repeat 0 -90px;
+}
+.head .head_top .ul_right .ul_right_weibo{
+    background: url("../images/header_icon.png") no-repeat 0 -110px;
+}
+.head .head_top .ul_right .ul_right_phone{
+    background: url("../images/header_icon.png") no-repeat 0 -130px;
+}
+.head .head_top .ul_right .ul_right_myTel{
+    background: url("../images/header_icon.png") no-repeat 0 -150px;
+}
+
+#changeBox{
+    padding: 0 14px 10px ;
+    width: 360px;
+    height: 373px;
+    background-color: white;
+    border:1px solid #ccc;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    z-index: 2;
+}
+#changeBox p{
+    padding: 10px 0 5px;
+    font-size: 13px;
+    color: #999;
+}
+#changeBox dl{
+    width: 100%;
+    padding:2px 0;
+    font-size: 12px;
+    line-height:20px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+#changeBox dt{
+    width: 50px;
+    float: left;
+    font-weight: bold;
+    color: #999;
+}
+#changeBox dd{
+    float: left;
+    width: 305px;
+}
+#changeBox dd a{
+    display: inline-block;
+    margin-right: 5px;
+}
+/*#url1{*/
+    /*border-left: 1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
+/*}*/
+#list{
+    width: 85px;
+    height: 103px;
+    position: absolute;
+    top:30px;
+    right: 491px;
+    background-color: white;
+}
+#list{
+    border: 1px solid #ccc;
+    display: none;
+}
+#list li{
+    margin-left: 10px;
+}
+#list li a{
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+#wechatBox{
+    width: 230px;
+    height: 103px;
+    background-color: white;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 103px;
+    position: absolute;
+    top:30px;
+    right: 146px;
+    display: none;
+}
+#myTelBox{
+    width: 184px;
+    height: 50px;
+    position: absolute;
+    top:30px;
+    right: 34px;
+    background: url("../images/header_icon.png") no-repeat -296px 0;
+    display: none;
+}
+#myTelBox .telNum{
+    color: rgb(238,51,136);
+    font-size: 16px;
+    position:absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.list{
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background-color:white;
+}
